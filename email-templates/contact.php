@@ -8,7 +8,7 @@
 	$comment=$_POST["comment"];
 	
 	// Email Receiver Address
-	$receiver="info@yourdomain.com";
+	$receiver="trigstudio@gmail.com";
 	$subject="Contact form details";
 
 	$message = "
