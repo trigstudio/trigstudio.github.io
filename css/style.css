@@ -78,8 +78,8 @@ ul, ol, dl {list-style-position: outside; margin-bottom: 25px}
 ====================================== */
 
 /* font family */
-.alt-font {font-family: 'Montserrat', sans-serif; font-weight: 500}
-.main-font {font-family: 'Roboto', sans-serif;}
+.alt-font {font-family: 'Noto Sans TC', 'Montserrat', sans-serif; font-weight: 500}
+.main-font {font-family: 'Noto Sans TC', 'Roboto', sans-serif;}
 
 /* heading */
 h1, h2, h3, h4, h5, h6 {margin:0 0 25px; padding:0; letter-spacing: 0; font-weight: 400;}
