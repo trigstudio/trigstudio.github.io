@@ -1627,7 +1627,7 @@ textarea.input-bg {background-color: #f7f7f7; border-radius: 4px; border: 1px so
 .display-none {display:none !important}
 .display-inherit {display:inherit !important}
 .display-table {display:table !important}
-.display-table-cell {display:table-cell !important}
+.display-table-cell {display:table-cell !important; text-align: center;}
 .overflow-hidden {overflow:hidden !important}
 .overflow-visible {overflow:visible !important}
 .overflow-auto {overflow:auto !important}
@@ -2454,7 +2454,7 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle { margin: 0; top: -2px;}
 
 .hamburger-menu-wrepper {position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #666666; z-index: -10005; padding: 55px 80px; display: table; opacity: 0; visibility: collapse;}
 .menu-middle {display: table; height: 100%; width: 65%; margin: 0 auto; opacity: 0;}
-.hamburger-menu-links {float: left; list-style: none; margin: 0; padding: 0; width: 100%; font-size: 52px; line-height: 55px; opacity: 0;}
+.hamburger-menu-links {float: left; list-style: none; margin: 0; padding: 0; width: 100%; font-size: 40px; line-height: 55px; opacity: 0;}
 .hamburger-menu-links li{float: left; margin-bottom: 36px; width: 50%;}
 .hamburger-menu-links li a{color: #fff; position: relative;}
 .hamburger-menu-links li.open > a{color: #ff2149}
