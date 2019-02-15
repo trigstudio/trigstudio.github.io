@@ -4524,8 +4524,8 @@
     /*hamburger menu*/
     .animation-box {padding: 90px 0 30px;}
     .animation-box .menu-middle { overflow-y: auto; display: inherit;}
-    .hamburger-menu-links {margin-bottom: 15px;}
-    .hamburger-menu-links li {width:100%; margin-bottom: 15px}
+    .hamburger-menu-links {margin-bottom: 15px; text-align: center; }
+    .hamburger-menu-links li {width:100%; margin-bottom: 40px}
     .hamburger-menu-links {font-size: 30px}
     .hamburger-menu .hamburger-menu-wrepper .btn-hamburger {right: 15px;}
     .hamburger-menu-wrepper { padding: 20px 15px; }
