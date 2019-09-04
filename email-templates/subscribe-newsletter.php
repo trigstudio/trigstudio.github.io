@@ -4,7 +4,7 @@
 	$from =$_POST["email"];
 	
 	// Email Receiver Address
-	$receiver="trigstudio@gmail.coms";
+	$receiver="trigstudio@gmail.com";
 	$subject="Subscribe Newsletter form details";
 
 	$message = "
