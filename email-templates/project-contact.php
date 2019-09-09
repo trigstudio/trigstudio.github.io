@@ -1,16 +1,17 @@
-
 <?php 
-  if(isset($_POST['email'])){
+  if(isset($_POST['submit'])){
 	  
 	$name =$_POST["name"];
 	$from =$_POST["email"];
-	$phone=$_POST["phone"];
+	$subject=$_POST["subject"];
 	$comment=$_POST["comment"];
-	$budget=$_POST["budget"];
 	
 	// Email Receiver Address
 	$receiver="trigstudio@gmail.com";
 	$subject="Contact form details";
+	$mailTo="trigstudio@gmail.com";
+	$headers="From: ".$mailFrom;
+	$txt ="You have recieved an e-mail from ".$name.".\n\n" .$comment;
 
 	$message = "
 	<html>
@@ -34,13 +35,9 @@
 	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Email:</td>
 	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>".$from."</td>
 	</tr>
-	<tr>
-	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Phone:</td>
-	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>".$phone."</td>
-	</tr>
-	<tr>
-	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Budget:</td>
-	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>".$budget."</td>
+		<tr>
+	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Subject:</td>
+	<td align='left' valign='top' style='border-top:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 0 7px 5px;'>".$subject."</td>
 	</tr>
 	<tr>
 	<td align='right' valign='top' style='border-top:1px solid #dfdfdf; border-bottom:1px solid #dfdfdf; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000; padding:7px 5px 7px 0;'>Message:</td>

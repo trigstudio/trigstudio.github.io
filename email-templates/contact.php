@@ -1,6 +1,6 @@
 
 <?php 
-  if(isset($_POST['email'])){
+  if(isset($_POST['submit'])){
 	  
 	$name =$_POST["name"];
 	$from =$_POST["email"];
@@ -10,6 +10,9 @@
 	// Email Receiver Address
 	$receiver="trigstudio@gmail.com";
 	$subject="Contact form details";
+	$mailTo="trigstudio@gmail.com";
+	$headers="From: ".$mailFrom;
+	$txt ="You have recieved an e-mail from ".$name.".\n\n" .$message;
 
 	$message = "
 	<html>
