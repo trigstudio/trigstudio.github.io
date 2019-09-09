@@ -12,7 +12,7 @@
 	$subject="Contact form details";
 	$mailTo="trigstudio@gmail.com";
 	$headers="From: ".$mailFrom;
-	$txt ="You have recieved an e-mail from ".$name.".\n\n" .$message;
+	$txt ="You have recieved an e-mail from ".$name.".\n\n" .$comment;
 
 	$message = "
 	<html>
