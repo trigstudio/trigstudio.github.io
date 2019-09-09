@@ -4350,7 +4350,7 @@
     .xs-col-3-nth .col-sm-4:nth-child(3n+1) {clear: left;}
     .xs-col-4-nth .col-sm-3:nth-child(4n+1) {clear: left;}
     .xs-center-col {float: none; margin: 0 auto;}
-    .mobile-height, .swiper-full-screen { height: auto !important;}
+    .mobile-height, .swiper-full-screen { height: 100% !important;}
     .mobile-height .full-screen, .swiper-full-screen .full-screen {height: 480px !important; min-height: 480px !important}
     .overlap-section {margin-top: 0}
     .gridblock-main {padding: 15px;}
