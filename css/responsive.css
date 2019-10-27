@@ -11,6 +11,10 @@
 }
 @media (min-width: 768px) {
     .feature-box-14 > div:nth-last-child(2) { border-bottom: 0}
+    #trig3d {
+            height: 50px;
+            width: auto;
+            }     
 }
 
 @media (max-width: 1500px) {
@@ -58,6 +62,10 @@
 }
 
 @media (max-width: 1199px) {
+    #trig3d {
+            height: 350px;
+            width: auto;
+            }     
     .panel-group * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -ms-transition-timing-function: none; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
     section {padding: 90px 0}
 
