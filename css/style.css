@@ -3743,7 +3743,7 @@ aside .latest-post li figure {width: 75px;}
 /* logo mouse motion */
 canvas { width: 100%; height: 100%; }
 #trig3d {
-            height: 30px;
+            height: auto;
             width: auto;
             }            
 
