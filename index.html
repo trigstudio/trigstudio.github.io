@@ -423,11 +423,11 @@
                        sectionHeight = container.offsetHeight;
                        sectionWidth = container.offsetWidth;            
                     camera = new THREE.PerspectiveCamera( 25, sectionWidth / sectionHeight, 1, 2000 );
-                       camera.position.z = 1250;
+                       camera.position.z = 1000;
                        
                     // scene
                        scene = new THREE.Scene();
-                       scene.background = new THREE.Color( 0x8FBCD4 );
+                       scene.background = new THREE.Color( 0xffffff );
 
                     // var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.4 );
                     // scene.add( ambientLight );
@@ -532,7 +532,7 @@
                         if(containerMouseover){                     
                             object.lookAt(mouseX, -mouseY, 300);                                                                
                         }else{
-                            object.rotation.x += 0.05;
+                            object.rotation.x += 0.01;
                         }
                            
                        }
