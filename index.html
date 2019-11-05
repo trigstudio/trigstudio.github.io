@@ -398,151 +398,151 @@
         <!-- end scroll to top  -->
         <!-- javascript libraries -->
 
-                <script type="module">
-                    import * as THREE from './js/three.module.js';
-                    import {OBJLoader} from './js/OBJLoader.js';
-                    import * as TWEEN from './js/tween.esm.js'
+        <script type="module">
+                   import * as THREE from './js/three.module.js';
+                   import {OBJLoader} from './js/OBJLoader.js';
+                import * as TWEEN from './js/tween.esm.js'
 
-                    var container;          
-                    var camera, scene, renderer;
-                    var mouseX = 0, mouseY = 0;
-                    var sectionWidth, sectionHeight;
-                    var windowHalfX = window.innerWidth / 2;
-                    var windowHalfY = window.innerHeight / 2;
-                    var object;
-                    
-                    var euler;
-                    var target_euler;
-                    var tween;
-                    var containerMouseover = false;
-                    
-                    init();
-                    animate();
-                    function init() {
-                        container = document.getElementById( 'trig3d' );
-                        sectionHeight = container.offsetHeight;
-                        sectionWidth = container.offsetWidth;           
-                        camera = new THREE.PerspectiveCamera( 25, sectionWidth / sectionHeight, 1, 2000 );
-                        camera.position.z = 1250;
-                        
-                        // scene
-                        scene = new THREE.Scene();
-                        scene.background = new THREE.Color( 0x8FBCD4 );
+                   var container;           
+                var camera, scene, renderer;
+                   var mouseX = 0, mouseY = 0;
+                   var sectionWidth, sectionHeight;
+                var windowHalfX = window.innerWidth / 2;
+                var windowHalfY = window.innerHeight / 2;
+                   var object;
+                
+                var euler;
+                var target_euler;
+                var tween;
+                var containerMouseover = false;
+                   
+                init();
+                animate();
+                function init() {
+                       container = document.getElementById( 'trig3d' );
+                       sectionHeight = container.offsetHeight;
+                       sectionWidth = container.offsetWidth;            
+                    camera = new THREE.PerspectiveCamera( 25, sectionWidth / sectionHeight, 1, 2000 );
+                       camera.position.z = 1000;
+                       
+                    // scene
+                       scene = new THREE.Scene();
+                       scene.background = new THREE.Color( 0x8FBCD4 );
 
-                        // var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.4 );
-                        // scene.add( ambientLight );
-                        // var pointLight = new THREE.PointLight( 0xffffff, 0.8 );
-                        // camera.add( pointLight );
+                    // var ambientLight = new THREE.AmbientLight( 0xcccccc, 0.4 );
+                    // scene.add( ambientLight );
+                    // var pointLight = new THREE.PointLight( 0xffffff, 0.8 );
+                    // camera.add( pointLight );
 
-                        scene.add( camera );
-                        
+                       scene.add( camera );
+                       }
 
-                        // manager
-                        function loadModel() {      
-                            object.traverse( function ( child ) {
-                                if(child.name == "trig_top.001"){
-                                    child.material = new THREE.MeshBasicMaterial( { color: 0x303030 } );
-                                }else if(child.name == "trig_btm"){
-                                    child.material = new THREE.MeshBasicMaterial( { color: 0xffffff } ) ;
-                                }
-                                
-                            } );
-                            scene.add( object );
+                    // manager
+                    function loadModel() {      
+                           object.traverse( function ( child ) {
+                               if(child.name == "trig_top.001"){
+                                   child.material = new THREE.MeshBasicMaterial( { color: 0x303030 } );
+                               }else if(child.name == "trig_btm"){
+                                   child.material = new THREE.MeshBasicMaterial( { color: 0xffffff } ) ;
+                               }
+                               
+                           } );
+                        scene.add( object );
+                    }
+                    var manager = new THREE.LoadingManager( loadModel );
+                    manager.onProgress = function ( item, loaded, total ) {
+                        // console.log( item, loaded, total );
+                    };
+                                       
+
+                    // model
+                    function onProgress( xhr ) {
+                        if ( xhr.lengthComputable ) {
+                            var percentComplete = xhr.loaded / xhr.total * 100;                     
                         }
-                        var manager = new THREE.LoadingManager( loadModel );
-                        manager.onProgress = function ( item, loaded, total ) {
-                            // console.log( item, loaded, total );
-                        };
-                                        
-
-                        // model
-                        function onProgress( xhr ) {
-                            if ( xhr.lengthComputable ) {
-                                var percentComplete = xhr.loaded / xhr.total * 100;                     
-                            }
-                        }
-                        function onError() {}
-                        var loader = new OBJLoader( manager );
-                        loader.load( 'models/trig-bottom-center.obj', function ( obj ) {                    
-                            object = obj;
-                        }, onProgress, onError );
-                        
-
-                        //
-                        renderer = new THREE.WebGLRenderer();
-                        renderer.setPixelRatio( window.devicePixelRatio );
-                        renderer.setSize( sectionWidth, sectionHeight );
-                        container.appendChild( renderer.domElement );
-                        document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-                        container.addEventListener('mouseover', on3dSessionMouseover, false);
-                        container.addEventListener('mouseout', on3dSessionMouseout, false);
-                        window.addEventListener( 'resize', onWindowResize, false );
-                        //
-                        
                     }
-                    function onWindowResize() {
-                        sectionHeight = container.offsetHeight;
-                        sectionWidth = container.offsetWidth;                
+                    function onError() {}
+                    var loader = new OBJLoader( manager );
+                    loader.load( 'models/trig-bottom-center.obj', function ( obj ) {                    
+                        object = obj;
+                       }, onProgress, onError );
+                       
 
-                        windowHalfX = window.innerWidth / 2;
-                        windowHalfY = window.innerHeight / 2;
-                        camera.aspect = sectionWidth / sectionHeight;
-                        camera.updateProjectionMatrix();
-                        renderer.setSize( sectionWidth, sectionHeight );
-                    }
-                    function onDocumentMouseMove( event ) {
-                        mouseX = ( event.clientX - windowHalfX ) / 2;
-                        mouseY = ( event.clientY - windowHalfY ) / 2;
-                    }
-
-
-                    function on3dSessionMouseover(event) {
-                        containerMouseover = true;
-                        if(tween){
-                            TWEEN.default.remove(tween);
-                        }
-                        
-                    }
-                    function on3dSessionMouseout(event){
-                        containerMouseover = false;
-                        if(object){
-                            euler = {y: object.rotation.y, z: object.rotation.z};
-                            tween = new TWEEN.default.Tween(euler)
-                                .to({y:0, z:0}, 200)
-                                .onUpdate(function(){
-                                    object.rotation.y = euler.y;
-                                    object.rotation.z = euler.z;
-                                })
-                                .start();
-                        }
-                        
-                    }
                     //
+                    renderer = new THREE.WebGLRenderer();
+                    renderer.setPixelRatio( window.devicePixelRatio );
+                    renderer.setSize( sectionWidth, sectionHeight );
+                    container.appendChild( renderer.domElement );
+                    document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+                    container.addEventListener('mouseover', on3dSessionMouseover, false);
+                    container.addEventListener('mouseout', on3dSessionMouseout, false);
+                    window.addEventListener( 'resize', onWindowResize, false );
+                    //
+                    
+                }
+                function onWindowResize() {
+                       sectionHeight = container.offsetHeight;
+                       sectionWidth = container.offsetWidth;                
+
+                    windowHalfX = window.innerWidth / 2;
+                    windowHalfY = window.innerHeight / 2;
+                    camera.aspect = sectionWidth / sectionHeight;
+                    camera.updateProjectionMatrix();
+                    renderer.setSize( sectionWidth, sectionHeight );
+                }
+                function onDocumentMouseMove( event ) {
+                    mouseX = ( event.clientX - windowHalfX ) / 2;
+                    mouseY = ( event.clientY - windowHalfY ) / 2;
+                }
 
 
-                    function animate() {
-                        requestAnimationFrame( animate );
-                        TWEEN.default.update();
-                        render();
-                        
+                function on3dSessionMouseover(event) {
+                    containerMouseover = true;
+                    if(tween){
+                        TWEEN.default.remove(tween);
                     }
+                    
+                }
+                function on3dSessionMouseout(event){
+                    containerMouseover = false;
+                    if(object){
+                        euler = {y: object.rotation.y, z: object.rotation.z};
+                        tween = new TWEEN.default.Tween(euler)
+                            .to({y:0, z:0}, 200)
+                            .onUpdate(function(){
+                                object.rotation.y = euler.y;
+                                object.rotation.z = euler.z;
+                            })
+                            .start();
+                    }
+                    
+                }
+                //
 
-                    function render() {             
-                        if(object){
-                            if(containerMouseover){                     
-                                object.lookAt(mouseX, -mouseY, 300);                                                                
-                            }else{
-                                object.rotation.x += 0.05;
-                            }
-                            
+
+                function animate() {
+                    requestAnimationFrame( animate );
+                    TWEEN.default.update();
+                    render();
+                    
+                }
+
+                function render() {             
+                       if(object){
+                        if(containerMouseover){                     
+                            object.lookAt(mouseX, -mouseY, 300);                                                                
+                        }else{
+                            object.rotation.x += 0.05;
                         }
-                        
-                        camera.lookAt( scene.position );
-                        renderer.render( scene, camera );
-                    }
+                           
+                       }
+                    
+                    camera.lookAt( scene.position );
+                    renderer.render( scene, camera );
+                }
 
 
-                </script>
+               </script>
         <script type="text/javascript" src="js/jquery.js"></script>
         <script type="text/javascript" src="js/modernizr.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
