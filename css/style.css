@@ -2347,7 +2347,7 @@ header nav .navbar-nav.text-normal > li > a {font-weight: 600; font-size: 12px }
 .mobile-toggle {display: block}
 .sidebar-nav .mobile-toggle {display: none}
 .mobile-toggle span { display: block; width: 16px; height: 2px; background: #232323; content: ""; margin: 3px 0px }
-.mobile-toggle:hover span, .white-link .mobile-toggle:hover span { background-color: red}
+.mobile-toggle:hover span, .white-link .mobile-toggle:hover span { background-color: #666666}
 .white-link .mobile-toggle span { background: #fff;}
 header nav .brand-logo { padding-top: 20px; padding-bottom: 20px;}
 header.sticky nav .brand-logo {padding-top: 15px; padding-bottom: 15px;}
@@ -2458,7 +2458,7 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle { margin: 0; top: -2px;}
 .hamburger-menu-links li{float: left; margin-bottom: 36px; width: 50%;}
 .hamburger-menu-links li a{color: #fff; position: relative;}
 .hamburger-menu-links li.open > a{color: #ff2149}
-.hamburger-menu-links li a:hover, .follow-box a:hover {color: #ff2149}
+.hamburger-menu-links li a:hover, .follow-box a:hover {color: #666666}
 .animation-box {position: absolute; top: 5%; height: 100%; width: 100%; left:0; transform: perspective(600px) rotateX(-20deg); -weblit-transform: perspective(600px) rotateX(-20deg); -moz-transform: perspective(600px) rotateX(-20deg); -ms-transform: perspective(600px) rotateX(-20deg); -o-transform: perspective(600px) rotateX(-20deg); }
 .hamburger-menu.show-menu .hamburger-menu-wrepper {z-index: 10004; opacity: 1; visibility: visible;}
 .hamburger-menu.show-menu .animation-box{top: 0; transform: perspective(600px) rotateX(0deg); -webkit-transform: perspective(600px) rotateX(0deg); -moz-transform: perspective(600px) rotateX(0deg); -o-transform: perspective(600px) rotateX(0deg); -ms-transform: perspective(600px) rotateX(0deg); opacity: 1;}
@@ -3225,7 +3225,7 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {padding: 20px; margin: 0 
 
 /* feature box style 7 */
 .feature-box.feature-box-7:before,.feature-box.feature-box-7:after {content: ''; display: table;}
-.feature-box.feature-box-7:hover,.feature-box.feature-box-7:hover:before,.feature-box.feature-box-7:hover:after {border: none }
+.feature-box.feature-box-7:hover,.feature-box.feature-box-7:d:before,.feature-box.feature-box-7:hover:after {border: none }
 .feature-box.feature-box-7::before, .feature-box.feature-box-7::after, .feature-box.feature-box-7 .content::before, .feature-box.feature-box-7 .content::after {background: transparent;}
 .feature-box.feature-box-7:after {clear: both;}
 .feature-box.feature-box-7 .box {cursor: default; height: 100%; width: 100%; display: table; position: relative; -webkit-transition: all 0.4s cubic-bezier(.48,.83,.63,.91); -moz-transition: all 0.4s cubic-bezier(.48,.83,.63,.91); -mstransition: all 0.4s cubic-bezier(.48,.83,.63,.91); -o-transition: all 0.4s cubic-bezier(.48,.83,.63,.91); transition: all 0.4s cubic-bezier(.48,.83,.63,.91); border: 1px solid #ededed; border-right: none; overflow: hidden}
@@ -3581,7 +3581,7 @@ a img.aligncenter { display: block; margin-left: auto; margin-right: auto }
 
 /* scroll to top */
 .scroll-top-arrow, .scroll-top-arrow:focus { color: #fff; background: #878787; line-height: 28px; display: none; height: 30px; width: 30px; padding: 0; position: fixed; right: 45px; text-align: center; text-decoration: none; top: 91%; z-index: 10006; border-radius: 100%;}
-.scroll-top-arrow:hover {background: #000; opacity: .8; color: #fff; border-color: #ff214f}
+.scroll-top-arrow:hover {background: #000; opacity: .8; color: #fff; border-color: #ffffff}
 .scroll-top-arrow i {line-height: 30px;  position: relative;}
 
 .bg-dark-footer{background-color:#141414;}
