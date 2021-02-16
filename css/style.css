@@ -2467,8 +2467,8 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle { margin: 0; top: -2px;}
 .hamburger-menu.show-menu .btn-hamburger .close-menu,.hamburger-menu .btn-hamburger .mobile-toggle  {transform: scale(1); -webkit-transform: scale(1); -moz-transform: scale(1); -o-transform: scale(1); -ms-transform: scale(1);}
 .hamburger-menu .hamburger-menu-wrepper .btn-hamburger {border-color: #fff; height: 18px; position: absolute; width: 18px; z-index: 99; padding: 0; margin: -27px 0 0 -15px; opacity: 0;}
 .hamburger-menu.show-menu .hamburger-menu-wrepper .btn-hamburger {opacity: 1; right: 40px; transition-delay: 0.2s; -webkit-transition-delay: 0.2s; -moz-transition-delay: 0.2s; -ms-transition-delay: 0.2s; -o-transition-delay: 0.2s;}
-.hamburger-menu .close-button-menu  { float: none; height: auto; margin: 0; padding: 0; position: inherit; right: -4px; top: 14px; width: auto;}
-.hamburger-menu .close-button-menu:after, .hamburger-menu .close-button-menu:before {background: #fff; width: 22px; right: 26px; top: -34px;}
+.hamburger-menu .close-button-menu  { float: none; height: auto; margin: 0; padding: 0; position: inherit; right: -4px; top: 34px; width: auto;}
+.hamburger-menu .close-button-menu:after, .hamburger-menu .close-button-menu:before {background: #fff; width: 22px; right: 4px; top: -34px;}
 .hamburger-menu-links li.dropdown > a:after{content: "\f107"; display: inline-block; position: absolute; right: -60px; top: 15px; font-family: 'FontAwesome'; font-size: 42px}
 
 /* header style two */
