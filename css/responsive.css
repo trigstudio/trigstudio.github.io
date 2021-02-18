@@ -64,7 +64,7 @@
 @media (max-width: 1199px) {
     #trig3d {
             height: 350px;
-            width: auto;
+            width: 70%;
             }     
 
     .panel-group * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -ms-transition-timing-function: none; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
