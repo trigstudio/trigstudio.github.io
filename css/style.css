@@ -8722,7 +8722,9 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
 .hamburger-menu-links li.open > a {
   color: #ff2149;
 }
-.hamburger-menu-links li a:hover,
+.hamburger-menu-links li a:hover {
+  color: #333333;
+}
 .follow-box a:hover {
   color: #666666;
 }
@@ -8774,12 +8776,12 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
 }
 .hamburger-menu .hamburger-menu-wrepper .btn-hamburger {
   border-color: #fff;
-  height: 18px;
+  height: 30px;
   position: absolute;
-  width: 18px;
+  width: 30px;
   z-index: 99;
-  padding: 0;
-  margin: -27px 0 0 -15px;
+  padding: 10px;
+  margin: -33px -4px 0 -15px;
   opacity: 0;
 }
 .hamburger-menu.show-menu .hamburger-menu-wrepper .btn-hamburger {
@@ -8798,16 +8800,16 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
   margin: 0;
   padding: 0;
   position: inherit;
-  right: -4px;
-  top: 34px;
+  right: 3px;
+  top: 30px;
   width: auto;
 }
 .hamburger-menu .close-button-menu:after,
 .hamburger-menu .close-button-menu:before {
   background: #fff;
   width: 22px;
-  right: 4px;
-  top: -34px;
+  right: 0;
+  top: -18px;
 }
 .hamburger-menu-links li.dropdown > a:after {
   content: "\f107";
