@@ -65,10 +65,11 @@ a:active,
 a:focus {
   color: #6f6f6f;
   text-decoration: none;
+  transition: all 0.5s;
 }
 a:hover,
 a:active {
-  color: #ffffff;
+  color: #999;
   text-decoration: none;
 }
 a:focus,
@@ -8796,6 +8797,8 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
 }
 .hamburger-menu .close-button-menu {
   position: relative;
+  top: -11px;
+  right: -8px;
 }
 .hamburger-menu .close-button-menu:after,
 .hamburger-menu .close-button-menu:before {
@@ -14620,11 +14623,12 @@ aside .latest-post li figure {
 .parallax-title {
   padding: 16px 35px;
   display: inline-block;
+  border: 3px solid #fff;
 }
 
 a.parallax-title:hover {
-  opacity: 0.9;
-  color: #666666;
+  color: #fff;
+  background: none;
 }
 
 /* home - blog grid */
@@ -14790,4 +14794,8 @@ canvas {
 
 .wow img:hover {
   filter: grayscale(0);
+}
+
+a.custom-hover:hover {
+  filter: invert(1);
 }
