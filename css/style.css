@@ -8795,21 +8795,12 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
   -o-transition-delay: 0.2s;
 }
 .hamburger-menu .close-button-menu {
-  float: none;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  position: inherit;
-  right: 3px;
-  top: 30px;
-  width: auto;
+  position: relative;
 }
 .hamburger-menu .close-button-menu:after,
 .hamburger-menu .close-button-menu:before {
   background: #fff;
   width: 22px;
-  right: 0;
-  top: -18px;
 }
 .hamburger-menu-links li.dropdown > a:after {
   content: "\f107";
@@ -14631,6 +14622,11 @@ aside .latest-post li figure {
   display: inline-block;
 }
 
+a.parallax-title:hover {
+  opacity: 0.9;
+  color: #666666;
+}
+
 /* home - blog grid */
 .highlight-bg-text {
   padding: 5px 16px;
@@ -14781,4 +14777,17 @@ canvas {
 
 .span-white span {
   background: #fff;
+}
+
+/* ----- add by shuan ----- */
+.parallax:not(.wow) {
+  cursor: pointer;
+}
+
+.wow img {
+  filter: grayscale(1);
+}
+
+.wow img:hover {
+  filter: grayscale(0);
 }
