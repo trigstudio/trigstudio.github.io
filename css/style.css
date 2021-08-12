@@ -14788,14 +14788,6 @@ canvas {
   cursor: pointer;
 }
 
-.wow img {
-  filter: grayscale(1);
-}
-
-.wow img:hover {
-  filter: grayscale(0);
-}
-
 a.custom-hover:hover {
   filter: invert(1);
 }
