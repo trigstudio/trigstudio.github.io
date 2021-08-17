@@ -14790,3 +14790,12 @@
     text-align: right;
   }
 }
+
+@media screen and (max-width: 767px) {
+  header a.logo.tt img {
+    width: 70px;
+  }
+  .hamburger-logo .logo {
+    width: 70px;
+  }
+}

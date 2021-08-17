@@ -7731,9 +7731,15 @@ header a.logo {
   display: inline-block;
   vertical-align: middle;
 }
+
+header a.logo.tt img {
+  width: 100px;
+}
+
 header a.logo img {
   max-height: 100px;
 }
+
 header .left-nav .sidebar-part1 a.logo img {
   max-height: inherit;
 }
@@ -10711,11 +10717,7 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {
   position: relative;
   overflow: hidden;
 }
-.portfolio-grid .grid-item figure img {
-  display: block;
-  width: 100%;
-  cursor: pointer;
-}
+
 .portfolio-grid .grid-item {
   opacity: 1;
   overflow: hidden;
@@ -10725,6 +10727,8 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {
   display: block;
   opacity: 1;
   width: 100%;
+  height: 300px;
+  object-fit: cover;
   transition: all 0.3s ease 0s;
 }
 .portfolio-grid .grid-item figcaption {
@@ -14005,11 +14009,8 @@ a img.aligncenter {
 .scroll-top-arrow,
 .scroll-top-arrow:focus {
   color: #fff;
-  background: #878787;
   line-height: 28px;
   display: none;
-  height: 30px;
-  width: 30px;
   padding: 0;
   position: fixed;
   right: 45px;
@@ -14017,17 +14018,18 @@ a img.aligncenter {
   text-decoration: none;
   top: 91%;
   z-index: 10006;
-  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/logo-arrow-top.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }
 .scroll-top-arrow:hover {
-  background: #000;
-  opacity: 0.8;
-  color: #fff;
-  border-color: #ffffff;
+  filter: invert(1);
 }
 .scroll-top-arrow i {
-  line-height: 30px;
-  position: relative;
+  display: none;
 }
 
 .bg-dark-footer {
@@ -14790,4 +14792,10 @@ canvas {
 
 a.custom-hover:hover {
   filter: invert(1);
+}
+.hamburger-logo .logo {
+  width: 100px;
+  margin: 0 15px;
+  display: flex;
+  justify-content: center;
 }
