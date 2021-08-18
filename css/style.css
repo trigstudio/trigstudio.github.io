@@ -7732,7 +7732,7 @@ header a.logo {
   vertical-align: middle;
 }
 
-header a.logo.tt img {
+header a .fixByShuan {
   width: 100px;
 }
 
