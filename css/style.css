@@ -14799,3 +14799,20 @@ a.custom-hover:hover {
   display: flex;
   justify-content: center;
 }
+
+.custom_about_bottom_line {
+  width: 18%;
+  border-bottom: 1px solid #999;
+  margin-bottom: 20px;
+}
+.custom_hover_bigger {
+  transition: ease 0.5s;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom_hover_bigger:hover {
+  transform: scale(1.2);
+}
