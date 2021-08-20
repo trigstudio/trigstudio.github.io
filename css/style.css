@@ -14823,6 +14823,6 @@ a.custom-hover:hover {
 
 .custom_contact_border {
   border: 1px solid #666;
-  border-right: none;
-  border-bottom: none;
+  border-right: 0;
+  border-bottom: 0;
 }
