@@ -1,720 +1,845 @@
 <!doctype html>
 <html class="no-js" lang="en">
-    <head>
-        <!-- title -->
-        <title>iPILOT Flight Club｜Design by Trig Studio</title>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <meta name="author" content="Tzu-Wei">
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121895644-3"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'UA-121895644-3');
-        </script>
-        <!-- description -->
-        <meta name ="description" content="We are an integration branding consultancy based in Taipei. We focus on brand experience through design, marketing and channel.">
-        <!-- keywords -->
-        <meta name="keywords" content="creative, brand constultant, design, marketing, channel, trig, trig studio, rebrand, Taiwan, Taipei, barnd, deigner, 品牌, 設計, 規劃, 品牌顧問, 行銷, 通路, 三角點, 策略設計, 店面設計">
-        <!-- title -->
-        <meta property="og:title" content="iPILOT Flight Club｜Design by Trig Studio">
-        <!-- favicon -->
-        <link rel="shortcut icon" href="img/favicon.png">
-        <link rel="apple-touch-icon" href="img/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
-        <!-- animation -->
-        <link rel="stylesheet" href="css/animate.css" />
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="css/bootstrap.min.css" />
-        <!-- et line icon --> 
-        <link rel="stylesheet" href="css/et-line-icons.css" />
-        <!-- font-awesome icon -->
-        <link rel="stylesheet" href="css/font-awesome.min.css" />
-        <!-- themify icon -->
-        <link rel="stylesheet" href="css/themify-icons.css">
-        <!-- swiper carousel -->
-        <link rel="stylesheet" href="css/swiper.min.css">
-        <!-- justified gallery  -->
-        <link rel="stylesheet" href="css/justified-gallery.min.css">
-        <!-- magnific popup -->
-        <link rel="stylesheet" href="css/magnific-popup.css" />
-        <!-- revolution slider -->
-        <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
-        <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
-        <!-- bootsnav -->
-        <link rel="stylesheet" href="css/bootsnav.css">
-        <!-- style -->
-        <link rel="stylesheet" href="css/style.css" />
-        <!-- responsive css -->
-        <link rel="stylesheet" href="css/responsive.css" />
-        <!--[if IE]>
+<head>
+    <!-- title -->
+    <title>iPILOT Flight Club｜Design by Trig Studio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="author" content="Tzu-Wei">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121895644-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-121895644-3');
+    </script>
+    <!-- description -->
+    <meta name="description"
+        content="We are an integration branding consultancy based in Taipei. We focus on brand experience through design, marketing and channel.">
+    <!-- keywords -->
+    <meta name="keywords"
+        content="creative, brand constultant, design, marketing, channel, trig, trig studio, rebrand, Taiwan, Taipei, barnd, deigner, 品牌, 設計, 規劃, 品牌顧問, 行銷, 通路, 三角點, 策略設計, 店面設計">
+    <!-- title -->
+    <meta property="og:title" content="iPILOT Flight Club｜Design by Trig Studio">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <!-- animation -->
+    <link rel="stylesheet" href="css/animate.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- et line icon -->
+    <link rel="stylesheet" href="css/et-line-icons.css" />
+    <!-- font-awesome icon -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- themify icon -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- swiper carousel -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <!-- justified gallery  -->
+    <link rel="stylesheet" href="css/justified-gallery.min.css">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <!-- revolution slider -->
+    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="css/bootsnav.css">
+    <!-- style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!--[if IE]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
-        <!-- Facebook Pixel Code -->
-        <script>
-          !function(f,b,e,v,n,t,s)
-          {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-          n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-          if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-          n.queue=[];t=b.createElement(e);t.async=!0;
-          t.src=v;s=b.getElementsByTagName(e)[0];
-          s.parentNode.insertBefore(t,s)}(window, document,'script',
-          'https://connect.facebook.net/en_US/fbevents.js');
-          fbq('init', '2218636731524458');
-          fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=2218636731524458&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Facebook Pixel Code -->
-    </head>
-    <body class="width-100">
-        <!-- start header -->
-        <header>
-            <!-- start navigation -->
-            <nav class="navbar navbar-default bootsnav bg-transparent nav-top-scroll">
-                <div class="container-fluid nav-header-container height-100px padding-three-half-lr xs-height-70px xs-padding-15px-lr">
-                    <!-- start header navigation -->
-                    <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6 hidden-xs text-left">
-                            <div class="social-icon">
-                                <a href="https://goo.gl/dvyU5j" title="Facebook" target="_blank"><i class="fa fa-facebook text-extra-dark-gray text-deep-pink-hover" aria-hidden="true"></i></a>
-                                <a href="https://www.instagram.com/studio.trig/?hl=zh-tw" title="Instagram" target="_blank"><i class="fa fa-instagram text-extra-dark-gray text-deep-pink-hover"></i></a>
-                            </div>
-                        </div>
-                        <!-- start logo -->
-                        <div class="tt col-md-4 col-sm-4 col-xs-6 text-center xs-text-left">
-                            <a class="tt logo" href="index.html"><img src="img/logo_ch.svg" data-at2x="img/logo_ch@2x.svg" class="default tt"  height="100" width="100" alt="Trig"></a>
-                        </div>
-                        <!-- end logo -->
-                        <div class="col-md-4 col-sm-4 col-xs-6 text-right">
-                            <div class="hamburger-menu">
-                                <div class="btn btn-hamburger border-none">
-                                    <button class="navbar-toggle mobile-toggle" type="button" id="open-button" data-toggle="collapse" data-target=".navbar-collapse">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
-                                    <!--<span class="close-menu text-white font-weight-300 alt-font text-extra-large">x</span>-->
-                                </div>
-                                <div class="hamburger-menu-wrepper xs-text-center">
-                                    <div class="hamburger-logo text-left"><a href="index.html" class="logo"><img src="img/logo-white.png" data-at2x="img/logo-white@2x.png" alt="Trig"/></a></div>
-                                    <div class="btn btn-hamburger border-none">
-                                        <button class="close-menu close-button-menu" id="close-button"></button>
-                                    </div>
-                                           <div class="hamburger-menu-wrepper xs-text-center">
-                                               <div class="hamburger-logo text-left"><a href="index.html" class="logo"><img src="img/logo-white.svg" data-at2x="img/logo-white@2x.svg" alt="Trig" width="50"/></a></div>
-                                               <div class="btn btn-hamburger border-none">
-                                                   <button class="close-menu close-button-menu" id="close-button"></button>
-                                               </div>
-                                               <div class="animation-box">
-                                                   <div class="menu-middle">
-                                                       <div class="menu-wrapper display-table-cell vertical-align-middle text-left">
-                                                           <div class="equalize no-margin">
-                                                               <div class="col-lg-8 col-md-8 col-sm-7 col-xs-12 display-table">
-                                                                   <div class="display-table-cell vertical-align-middle">
-                                                                       <ul class="hamburger-menu-links alt-font">
-                                                                           <li><a href="index.html" title="Home">首頁</a></li>
-                                                                           <li><a href="portfolio.html" title="Portfolio">作品</a></li>
-                                                                           <li><a href="about-us-simple.html" title="Pages">關於</a></li>
-                                                                           <li><a href="service.html" title="Pages">服務</a></li>
-                                                                           <li><a href="coming soom.html" title="Blog">文章</a></li>
-                                                                           <li><a href="contact.html" title="Blog">聯絡</a></li>
-                                                                       </ul>
-                                                                   </div>
-                                                               </div>
-                                                              <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 display-table">
-                                                                   <div class="display-table-cell vertical-align-middle social-style-3">  
-                                                                       <span class="text-extra-large text-white alt-font display-block margin-15px-bottom">A Cute Taipei Based Brand Consultancy</span>
-                                                                       <span class="text-medium text-black alt-font display-block font-weight-300 margin-15px-bottom line-height-30">3F, No.45-2, Sec. 1, Chang’an E. Rd, Zhongshan Dist., Taipei, Taiwan<br/>T  +886 (9) 8889 3080<br/>   <a href="mailto:trigstudio@gmail.com" class="text-black" target="_blank">trigstudio@gmail.com</a></span>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2218636731524458');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=2218636731524458&ev=PageView&noscript=1" /></noscript>
+    <!-- End Facebook Pixel Code -->
+</head>
 
-                                                                       <div class="separator-line-horrizontal-medium-light2 bg-white margin-25px-tb xs-margin-15px-tb display-inline-block"></div>
-                                                                       <div class="social-icon-style-9">
-                                                                           <ul class="small-icon">
-                                                                               <li> <a class="text-white" href="https://goo.gl/dvyU5j" title="Facebook" target="_blank"><i class="fa fa-facebook text-deep-pink-hover" aria-hidden="true"></i></a></li>
-                                                                               <li><a class="text-white" href="https://www.instagram.com/studio.trig/" title="Instagram" target="_blank"><i class="fa fa-instagram text-deep-pink-hover"></i></a></li>
-                                                                               
-                                                                           </ul>
-                                                                       </div>
-                                                                   </div>
-                                                               </div>
-                                                           </div>
-                                                       </div>
-                                                   </div>
-                                               </div>
-                                           </div>
+<body class="width-100">
+    <!-- start header -->
+    <header>
+        <!-- start navigation -->
+        <nav class="navbar navbar-default bootsnav bg-transparent nav-top-scroll">
+            <div class="
+                    container-fluid
+                    nav-header-container
+                    height-100px
+                    padding-three-half-lr
+                    xs-height-70px xs-padding-15px-lr
+                  ">
+                <!-- start header navigation -->
+                <div class="row">
+                    <!-- start logo -->
+                    <div class="col-md-4 col-sm-4 col-xs-6 xs-text-left text-left">
+                        <a class="tt logo" href="index.html">
+                            <img src="img/logo_ch@2x.svg" class="fixByShuan" alt="Trig" />
+                        </a>
+                    </div>
+                    <!-- end logo -->
+
+                    <div class="col-md-4 col-sm-4 col-xs-6 text-right">
+                        <div class="hamburger-menu">
+                            <div class="btn btn-hamburger border-none">
+                                <button class="navbar-toggle mobile-toggle" type="button" id="open-button"
+                                    data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="hamburger-menu-wrepper xs-text-center">
+                                <div class="hamburger-logo text-left">
+                                    <a href="index.html" class="logo"><img src="img/logo-white.svg"
+                                            data-at2x="img/logo-white@2x.svg" alt="Trig" width="50" /></a>
+                                </div>
+                                <div class="btn btn-hamburger border-none">
+                                    <button class="
+                                close-menu close-button-menu
+                                avbar-toggle
+                                mobile-toggle
+                              " id="close-button"></button>
+                                </div>
+                                <div class="animation-box">
+                                    <div class="menu-middle">
+                                        <div class="
+                                  menu-wrapper
+                                  display-table-cell
+                                  vertical-align-middle
+                                  text-left
+                                ">
+                                            <div class="equalize no-margin">
+                                                <div class="
+                                      col-lg-8 col-md-8 col-sm-7 col-xs-12
+                                      display-table
+                                    ">
+                                                    <div class="
+                                        display-table-cell
+                                        vertical-align-middle
+                                        text-md-left
+                                      ">
+                                                        <ul class="hamburger-menu-links alt-font">
+                                                            <li>
+                                                                <a href="index.html" title="Home">首頁</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="portfolio.html" title="Portfolio">作品</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="about-us-simple.html" title="About">關於</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="service.html" title="Service">服務</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="job-opening.html" title="Job Opening">徵才</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="contact.html" title="Contact">聯絡</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="
+                                      col-lg-4 col-md-4 col-sm-5 col-xs-12
+                                      display-table
+                                    ">
+                                                    <div class="
+                                        display-table-cell
+                                        vertical-align-middle
+                                        social-style-3
+                                        text-md-right
+                                      ">
+                                                        <span class="
+                                          text-extra-large text-white
+                                          alt-font
+                                          display-block
+                                          margin-15px-bottom
+                                        ">A Cute Taipei Based Brand Consultancy</span>
+                                                        <span class="
+                                          text-medium text-black
+                                          alt-font
+                                          display-block
+                                          font-weight-300
+                                          margin-15px-bottom
+                                          line-height-30
+                                        "><a class="text-black" href="https://g.page/TrigStudio?share"
+                                                                target="_blank">3F,
+                                                                No.45-2, Sec. 1,
+                                                                Chang’an E. Rd, Zhongshan
+                                                                Dist., Taipei, Taiwan</a><br /><a class="text-black"
+                                                                href="tel:+886988893080">T +886 (9)
+                                                                8889
+                                                                3080</a><br />
+                                                            <a href="mailto:trigstudio@gmail.com" class="text-black"
+                                                                target="_blank">trigstudio@gmail.com</a></span>
+
+                                                        <div class="
+                                          separator-line-horrizontal-medium-light2
+                                          bg-white
+                                          margin-25px-tb
+                                          xs-margin-15px-tb
+                                          display-inline-block
+                                        "></div>
+                                                        <div class="social-icon-style-9">
+                                                            <ul class="small-icon">
+                                                                <li>
+                                                                    <a class="text-white" href="https://goo.gl/dvyU5j"
+                                                                        title="Facebook" target="_blank"><i class="
+                                                  fa fa-facebook
+                                                  text-deep-pink-hover
+                                                " aria-hidden="true"></i></a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="text-white"
+                                                                        href="https://www.instagram.com/studio.trig/?hl=zh-tw"
+                                                                        title="Instagram" target="_blank"><i class="
+                                                  fa fa-instagram
+                                                  text-deep-pink-hover
+                                                "></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- end header navigation -->
-            </nav>
-            <!-- end navigation -->
-
-        </header>
-        <!-- end header -->
-        <!-- start about product section -->
-        <section class="wow fadeIn bg-light-gray top-space padding-three-bottom padding-six-top">
-            <div class="container">
+            </div>
+            <!-- end header navigation -->
+        </nav>
+        <!-- end navigation -->
+    </header>
+    <!-- end header -->
+    <!-- start about product section -->
+    <section class="wow fadeIn bg-light-gray top-space padding-three-bottom padding-six-top">
+        <div class="container">
+            <div class="row">
                 <div class="row">
-                     <div class="row">
                     <div class="col-xs-12 no-padding margin-three-bottom sm-margin-30px-bottom text-center">
-                        <div class="col-lg-10 col-md-12 center-col text-center margin-30px-bottom xs-margin-15px-bottom wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="col-lg-10 col-md-12 center-col text-center margin-30px-bottom xs-margin-15px-bottom wow fadeInUp"
+                            data-wow-delay="0.2s">
                             <img src="img/w3/17-2.jpg" alt="" class="border-radius-6">
                         </div>
 
                     </div>
-                    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 text-center center-col margin-10px-bottom sm-margin-20px-bottom xs-margin-10px-bottom">
-                       
-                        <h6 class="font-weight-400 text-extra-dark-gray alt-font margin-10px-bottom sm-margin-10px-bottom margin-five-right margin-five-left">I want to be a pilot, iPILOT.</h6>
+                    <div
+                        class="col-lg-10 col-md-10 col-sm-10 col-xs-12 text-center center-col margin-10px-bottom sm-margin-20px-bottom xs-margin-10px-bottom">
+
+                        <h6
+                            class="font-weight-400 text-extra-dark-gray alt-font margin-10px-bottom sm-margin-10px-bottom margin-five-right margin-five-left">
+                            I want to be a pilot, iPILOT.</h6>
                     </div>
                 </div>
-                </div>
-
             </div>
-        </section>
-        <!-- end about product section -->
 
-        <!-- start about product section -->
-        <section class="wow fadeIn">
-            <div class="container">
-                
-                <div class="row">
-                    <div class="col-md-6 sm-margin-50px-bottom xs-margin-30px-bottom wow fadeIn">
-                        <h5 class="alt-font text-extra-dark-gray font-weight-600">在雲之上，體驗飛行</h5>
-                        <p>飛行是人類從古至今一直不斷追尋的夢想，不論是孟格菲兄弟的熱氣球升空、經典的齊柏林飛船，一直到萊特兄弟發明飛機，這些都是人類想要更接近天空的證明，「iPILOT Flight Club」，是一個專門提供沉浸式飛行模擬體驗的品牌，讓那些懷有「飛行夢」的人們可以實踐他們的夢想，I want to be a pilot, iPILOT.</br>
-                        有別於一般飛行元素，我們這次嘗試從駕駛員的視角出發，以駕駛艙的窗戶輪廓作為LOGO的基本外形，外框線條也運用了 飛機尾翼曲線及速度感的造型，讓LOGO彷彿變成隨風飛揚的旗幟，呈現飛行的抽象性元素。
+        </div>
+    </section>
+    <!-- end about product section -->
+
+    <!-- start about product section -->
+    <section class="wow fadeIn">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-6 sm-margin-50px-bottom xs-margin-30px-bottom wow fadeIn">
+                    <h5 class="alt-font text-extra-dark-gray font-weight-600">在雲之上，體驗飛行</h5>
+                    <p>飛行是人類從古至今一直不斷追尋的夢想，不論是孟格菲兄弟的熱氣球升空、經典的齊柏林飛船，一直到萊特兄弟發明飛機，這些都是人類想要更接近天空的證明，「iPILOT Flight
+                        Club」，是一個專門提供沉浸式飛行模擬體驗的品牌，讓那些懷有「飛行夢」的人們可以實踐他們的夢想，I want to be a pilot, iPILOT.</br>
+                        有別於一般飛行元素，我們這次嘗試從駕駛員的視角出發，以駕駛艙的窗戶輪廓作為LOGO的基本外形，外框線條也運用了
+                        飛機尾翼曲線及速度感的造型，讓LOGO彷彿變成隨風飛揚的旗幟，呈現飛行的抽象性元素。
                         另外，天空藍與大地色的配色靈感，則來自於飛機儀表上很重要的主要飛行顯示幕(PFD)，並結合 地平線的元素，象徵駕駛員從駕駛艙看出去的天地一線之感。</br>
                         在LOGO完成的同時，我們也結合iPILOT Flight Club過年期間的101快閃檔期活動，加入全台灣最高樓之意象 來設計其聯名周邊與展場。
                         除了識別與周邊衍生商品的設計之外，這次我們也挑戰了少見的立體飛機塗裝，以及會自動起飛的機動模型設計。
                         一次橫跨了平面、產品、空間三個不同領域的品牌規劃，不但能夠更完整的傳達品牌面貌，也讓品牌從2D平面的圖像進化成能夠整合服務的 4D品牌體驗，讓使用者身歷其境，像是作了一場關於飛行的夢。
 
-                        </p>
+                    </p>
 
-                    </div>
-                    <div class="col-md-4 col-md-offset-2 wow fadeIn">
-                        <ul class="list-style-8 margin-twelve-left">
-                             <li class="text-uppercase text-extra-dark-gray"><span class="display-block text-extra-small text-medium-gray">Client</span>iPILOT Flight Club</li>
-                            <li class="text-uppercase text-extra-dark-gray"><span class="display-block text-extra-small text-medium-gray">Date</span>2020</li>
-                            <li class="text-uppercase text-extra-dark-gray"><span class="display-block text-extra-small text-medium-gray">Credit</span>Creative Direction by Tzu-Wei Wang</br>
+                </div>
+                <div class="col-md-4 col-md-offset-2 wow fadeIn">
+                    <ul class="list-style-8 margin-twelve-left">
+                        <li class="text-uppercase text-extra-dark-gray"><span
+                                class="display-block text-extra-small text-medium-gray">Client</span>iPILOT Flight Club
+                        </li>
+                        <li class="text-uppercase text-extra-dark-gray"><span
+                                class="display-block text-extra-small text-medium-gray">Date</span>2020</li>
+                        <li class="text-uppercase text-extra-dark-gray"><span
+                                class="display-block text-extra-small text-medium-gray">Credit</span>Creative Direction
+                            by Tzu-Wei Wang</br>
                             Graphic Design by Money Wang + Eva Lee</br>
                             Exhibition Design by Tzu-Wei Wang</br>
                             Project Management by Samuel Chao</br>
                             Photography by Debby Wang</br>
-                            </li>
-                            <li class="text-uppercase text-extra-dark-gray"><span class="display-block text-extra-small text-medium-gray">Tag</span>Art Direction, CIS design, Product design, Spatial Design, Branding</li>
-                            
-                        </ul>
-                    </div>
+                        </li>
+                        <li class="text-uppercase text-extra-dark-gray"><span
+                                class="display-block text-extra-small text-medium-gray">Tag</span>Art Direction, CIS
+                            design, Product design, Spatial Design, Branding</li>
+
+                    </ul>
                 </div>
             </div>
-        </section>
-        <!-- end about product section -->
-       
-        <!-- start product gallery section -->
-        <section class="wow fadeIn no-padding-top">
-            <div class="container-fluid">
-                <div class="row">
-                   
-                    <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/1.gif" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
-                    <!-- start project gallery slider section -->
-                   
-                       
-                                <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
-                                        <div class="swiper-wrapper">
-                                           
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/2-1.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/2-2.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                           
-                                        </div>
-                                        <!-- start slider pagination -->
-                                        <div class="swiper-pagination swiper-pagination-square"></div>
-                                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
-                                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
-                                        <!-- end slider pagination -->
-                                    </div>
-                                </div>
-       
-                    <!-- end project gallery slider section -->
-                    <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/03.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
-                    <!-- start project gallery slider section -->
-                    
-                       
-                                <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
-                                        <div class="swiper-wrapper">
-                                           
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/4-1.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/4-2.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                           
-                                        </div>
-                                        <!-- start slider pagination -->
-                                        <div class="swiper-pagination swiper-pagination-square"></div>
-                                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
-                                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
-                                        <!-- end slider pagination -->
-                                    </div>
-                                </div>
-                    
-                    <!-- end project gallery slider section -->
-                    <!-- start project gallery slider section -->
-                    
-                       
-                                <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
-                                        <div class="swiper-wrapper">
-                                           
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/5-1.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/5-2.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                           
-                                        </div>
-                                        <!-- start slider pagination -->
-                                        <div class="swiper-pagination swiper-pagination-square"></div>
-                                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
-                                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
-                                        <!-- end slider pagination -->
-                                    </div>
-                                </div>
-                    
-                    <!-- end project gallery slider section -->
-                    <!-- start project gallery slider section -->   
-                                <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
-                                        <div class="swiper-wrapper">
-                                           
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/6-1.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/6-2.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                           
-                                        </div>
-                                        <!-- start slider pagination -->
-                                        <div class="swiper-pagination swiper-pagination-square"></div>
-                                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
-                                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
-                                        <!-- end slider pagination -->
-                                    </div>
-                                </div>
-                    
-                    <!-- end project gallery slider section -->
+        </div>
+    </section>
+    <!-- end about product section -->
 
-                    <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/07.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
-                    <!-- start project gallery slider section -->   
-                                <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
-                                        <div class="swiper-wrapper">
-                                           
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/8-1.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/8-2.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/8-3.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                           
-                                        </div>
-                                        <!-- start slider pagination -->
-                                        <div class="swiper-pagination swiper-pagination-square"></div>
-                                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
-                                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
-                                        <!-- end slider pagination -->
-                                    </div>
-                                </div>
-                    
-                    <!-- end project gallery slider section -->
-                    <!-- start project gallery slider section -->   
-                                <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
-                                        <div class="swiper-wrapper">
-                                           
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/9-1.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/9-2.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/9-3.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-        
-                                           
-                                        </div>
-                                        <!-- start slider pagination -->
-                                        <div class="swiper-pagination swiper-pagination-square"></div>
-                                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
-                                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
-                                        <!-- end slider pagination -->
-                                    </div>
-                                </div>
-                    
-                    <!-- end project gallery slider section -->
-                    <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/9-4.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
-                    <!-- start project gallery slider section -->   
-                                <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
-                                        <div class="swiper-wrapper">
-                                           
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/10-1.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/10-2.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->    
-                                        </div>
-                                        <!-- start slider pagination -->
-                                        <div class="swiper-pagination swiper-pagination-square"></div>
-                                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
-                                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
-                                        <!-- end slider pagination -->
-                                    </div>
-                                </div>
-                    
-                    <!-- end project gallery slider section -->
-                    <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/103.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
-                     <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/104.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
-                     <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/11.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
-                    <!-- start project gallery slider section -->   
-                                <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
-                                        <div class="swiper-wrapper">
-                                           
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/12-1.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->
-                                            <!-- start slider item -->
-                                            <div class="swiper-slide">
-                                                <img src="img/w3/12-2.jpg" class="width-100" alt=""/>
-                                            </div>
-                                            <!-- end slider item -->    
-                                        </div>
-                                        <!-- start slider pagination -->
-                                        <div class="swiper-pagination swiper-pagination-square"></div>
-                                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
-                                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
-                                        <!-- end slider pagination -->
-                                    </div>
-                                </div>
-                    
-                    <!-- end project gallery slider section -->
-                     <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/12-3.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
-                    <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/13.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
+    <!-- start product gallery section -->
+    <section class="wow fadeIn no-padding-top">
+        <div class="container-fluid">
+            <div class="row">
 
-                    <!-- start project gallery slider section -->   
-                               <!--  <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/1.gif" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+                <!-- start project gallery slider section -->
+
+
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
+                        <div class="swiper-wrapper">
+
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/2-1.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/2-2.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+
+                        </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-square"></div>
+                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
+                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+
+                <!-- end project gallery slider section -->
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/03.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+                <!-- start project gallery slider section -->
+
+
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
+                        <div class="swiper-wrapper">
+
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/4-1.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/4-2.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+
+                        </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-square"></div>
+                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
+                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+
+                <!-- end project gallery slider section -->
+                <!-- start project gallery slider section -->
+
+
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
+                        <div class="swiper-wrapper">
+
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/5-1.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/5-2.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+
+                        </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-square"></div>
+                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
+                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+
+                <!-- end project gallery slider section -->
+                <!-- start project gallery slider section -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
+                        <div class="swiper-wrapper">
+
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/6-1.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/6-2.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+
+                        </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-square"></div>
+                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
+                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+
+                <!-- end project gallery slider section -->
+
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/07.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+                <!-- start project gallery slider section -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
+                        <div class="swiper-wrapper">
+
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/8-1.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/8-2.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/8-3.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+
+                        </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-square"></div>
+                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
+                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+
+                <!-- end project gallery slider section -->
+                <!-- start project gallery slider section -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
+                        <div class="swiper-wrapper">
+
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/9-1.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/9-2.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/9-3.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+
+
+                        </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-square"></div>
+                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
+                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+
+                <!-- end project gallery slider section -->
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/9-4.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+                <!-- start project gallery slider section -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
+                        <div class="swiper-wrapper">
+
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/10-1.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/10-2.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                        </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-square"></div>
+                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
+                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+
+                <!-- end project gallery slider section -->
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/103.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/104.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/11.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+                <!-- start project gallery slider section -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
+                        <div class="swiper-wrapper">
+
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/12-1.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/12-2.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
+                        </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-square"></div>
+                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
+                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+
+                <!-- end project gallery slider section -->
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/12-3.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/13.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+
+                <!-- start project gallery slider section -->
+                <!--  <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
                                     <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
                                         <div class="swiper-wrapper">
                                            
                                             <!-- start slider item -->
-                                            <!-- <div class="swiper-slide">
+                <!-- <div class="swiper-slide">
                                                 <img src="img/w3/14-1.jpg" class="width-100" alt=""/>
                                             </div>
                                             <!-- end slider item -->
-                                            <!-- start slider item -->
-                                        <!--     <div class="swiper-slide">
+                <!-- start slider item -->
+                <!--     <div class="swiper-slide">
                                                 <img src="img/w3/14-2.jpg" class="width-100" alt=""/>
                                             </div> -->
-                                            <!-- end slider item -->    
-                                       <!--  </div>
+                <!-- end slider item -->
+                <!--  </div>
                                         <!-- start slider pagination -->
-                                <!--         <div class="swiper-pagination swiper-pagination-square"></div>
+                <!--         <div class="swiper-pagination swiper-pagination-square"></div>
                                         <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
                                         <div class="swiper-button-prev swiper-button-black-highlight display-none"></div> -->
-                                        <!-- end slider pagination -->
-                         <!--            </div>
+                <!-- end slider pagination -->
+                <!--            </div>
                                 </div> --> --> -->
-                     -->
-                    <!-- end project gallery slider section -->
-                    <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/15.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
-                  <!-- start project gallery slider section -->   
-                              <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                                  <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
-                                      <div class="swiper-wrapper">
-                                         
-                                          <!-- start slider item -->
-                                          <div class="swiper-slide">
-                                              <img src="img/w3/16-1.jpg" class="width-100" alt=""/>
-                                          </div>
-                                          <!-- end slider item -->
-                                          <!-- start slider item -->
-                                          <div class="swiper-slide">
-                                              <img src="img/w3/16-2.jpg" class="width-100" alt=""/>
-                                          </div>
-                                          <!-- end slider item -->    
-                                      </div>
-                                      <!-- start slider pagination -->
-                                      <div class="swiper-pagination swiper-pagination-square"></div>
-                                      <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
-                                      <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
-                                      <!-- end slider pagination -->
-                                  </div>
-                              </div>
-                  
-                  <!-- end project gallery slider section -->
-                  <!-- start product gallery item -->
-                    <div class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                        <img src="img/w3/17.jpg" class="width-100" alt=""/>
-                    </div>
-                    <!-- end product gallery item -->
+                -->
+                <!-- end project gallery slider section -->
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/15.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+                <!-- start project gallery slider section -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <div class="swiper-full-screen swiper-container height-100 width-100 black-move">
+                        <div class="swiper-wrapper">
 
-                </div>
-            </div>
-        </section>
-        <!-- end product gallery section -->
-        
-       <!-- start related work section -->
-        <section class="wow fadeIn bg-light-gray">
-            <div class="container">
-                <div class="row margin-eight-bottom">
-                    <div class="col-md-8 col-sm-10 col-xs-12 center-col text-center last-paragraph-no-margin">
-                        <h4 class="alt-font font-weight-600 text-extra-dark-gray">最新作品</h4>
-                        <p class="text-large text-medium-gray">看看我們還做過什麼有趣的事？</p>
-                    </div>
-                </div>
-            </div>
-            <div class="container-fluid padding-thirteen-lr md-no-padding-lr xs-padding-15px-lr">
-                <div class="row no-margin">
-                    <div class="filter-content overflow-hidden">
-                        <ul class="portfolio-grid work-2col gutter-large hover-option6 lightbox-portfolio">
-                            <li class="grid-sizer"></li>
-                            <!-- start  portfolio item -->
-                            <li class="design web photography grid-item wow fadeInUp last-paragraph-no-margin">
-                                <figure>
-                                    <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
-                                        <img src="img/02.gif" alt=""/>
-                                        <div class="portfolio-icon">
-                                            <a class="project-05.html" title="IMAGE TITLE" href="project-02.html"><i class="fa fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="bg-white">
-                                        <div class="portfolio-hover-main text-center">
-                                            <div class="portfolio-hover-box vertical-align-middle">
-                                                <div class="portfolio-hover-content position-relative">
-                                                    <a href="project-02.html"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase display-block">Deila 共享租車平台</span></a>
-                                                    <p class="text-medium-gray text-extra-small text-uppercase">Branding + Identity + Web</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <!-- end portfolio item -->
-                            <!-- start portfolio item -->
-                            <li class="advertising grid-item wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
-                                <figure>
-                                    <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
-                                        <img src="img/01.jpg" alt=""/>
-                                        <div class="portfolio-icon">
-                                            <a class="project-01.html" title="IMAGE TITLE" href="project-01.html"><i class="fa fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
-                                        </div>
-                                    </div>
-                                    <figcaption class="bg-white">
-                                        <div class="portfolio-hover-main text-center">
-                                            <div class="portfolio-hover-box vertical-align-middle">
-                                                <div class="portfolio-hover-content position-relative">
-                                                    <a href="project-01.html"><span class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase display-block">呷滴 JiaDee</span></a>
-                                                    <p class="text-medium-gray text-extra-small text-uppercase">Branding + Identity + Package + Space</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </figcaption>
-                                </figure>
-                            </li>
-                            <!-- end portfolio item -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-                            <!-- end portfolio item -->
-  
-        <!-- start footer --> 
-        <footer class="footer-strip bg-light-gray padding-50px-tb xs-padding-30px-tb">
-            <div class="container">
-                <div class="row equalize xs-equalize-auto">
-                    <!-- start logo -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 display-table sm-text-center xs-margin-20px-bottom">
-                        <div class="display-table-cell vertical-align-middle">
-                            <a href="index.html"><img class="footer-logo" src="img/logo_ch.png" data-at2x="img/logo_ch@2x.png" alt="Trig"></a>
-                        </div>
-                    </div> 
-                    <!-- end logo -->
-                    <!-- start copyright -->
-                    <div class="col-md-6 col-sm-6 col-xs-12 text-center text-small alt-font display-table xs-margin-10px-bottom sm-text-center">
-                        <div class="display-table-cell vertical-align-middle">
-                            三角點品牌顧問有限公司</br>
-                             &COPY; 2021, Trig studio 
-                        </div>
-                    </div>
-                    <!-- end copyright -->
-                    <!-- start social media -->
-                    <div class="col-md-3 col-sm-3 col-xs-12 display-table  text-right sm-text-center">
-                        <div class="display-table-cell vertical-align-middle">
-                            <div class="social-icon-style-8 display-inline-block vertical-align-middle">
-                                <ul class="small-icon no-margin-bottom">
-                                    <li><a class="facebook" href="https://goo.gl/dvyU5j" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                    <li><a class="instagram" href="https://www.instagram.com/studio.trig/?hl=zh-tw" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                                    
-                                </ul>
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/16-1.jpg" class="width-100" alt="" />
                             </div>
+                            <!-- end slider item -->
+                            <!-- start slider item -->
+                            <div class="swiper-slide">
+                                <img src="img/w3/16-2.jpg" class="width-100" alt="" />
+                            </div>
+                            <!-- end slider item -->
                         </div>
+                        <!-- start slider pagination -->
+                        <div class="swiper-pagination swiper-pagination-square"></div>
+                        <div class="swiper-button-next swiper-button-black-highlight display-none"></div>
+                        <div class="swiper-button-prev swiper-button-black-highlight display-none"></div>
+                        <!-- end slider pagination -->
                     </div>
-                    <!-- end social media -->
+                </div>
+
+                <!-- end project gallery slider section -->
+                <!-- start product gallery item -->
+                <div
+                    class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
+                    <img src="img/w3/17.jpg" class="width-100" alt="" />
+                </div>
+                <!-- end product gallery item -->
+
+            </div>
+        </div>
+    </section>
+    <!-- end product gallery section -->
+
+    <!-- start related work section -->
+    <section class="wow fadeIn bg-light-gray">
+        <div class="container">
+            <div class="row margin-eight-bottom">
+                <div class="col-md-8 col-sm-10 col-xs-12 center-col text-center last-paragraph-no-margin">
+                    <h4 class="alt-font font-weight-600 text-extra-dark-gray">最新作品</h4>
+                    <p class="text-large text-medium-gray">看看我們還做過什麼有趣的事？</p>
                 </div>
             </div>
-        </footer>
-        <!-- end footer -->
-        <!-- start scroll to top -->
-        <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
-        <!-- end scroll to top  -->
-        <!-- javascript libraries -->
-        <script type="text/javascript" src="js/jquery.js"></script>
-        <script type="text/javascript" src="js/modernizr.js"></script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-        <script type="text/javascript" src="js/skrollr.min.js"></script>
-        <script type="text/javascript" src="js/smooth-scroll.js"></script>
-        <script type="text/javascript" src="js/jquery.appear.js"></script>
-        <!-- menu navigation -->
-        <script type="text/javascript" src="js/bootsnav.js"></script>
-        <script type="text/javascript" src="js/jquery.nav.js"></script>
-        <!-- animation -->
-        <script type="text/javascript" src="js/wow.min.js"></script>
-        <!-- page scroll -->
-        <script type="text/javascript" src="js/page-scroll.js"></script>
-        <!-- swiper carousel -->
-        <script type="text/javascript" src="js/swiper.min.js"></script>
-        <!-- counter -->
-        <script type="text/javascript" src="js/jquery.count-to.js"></script>
-        <!-- parallax -->
-        <script type="text/javascript" src="js/jquery.stellar.js"></script>
-        <!-- magnific popup -->
-        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
-        <!-- portfolio with shorting tab -->
-        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
-        <!-- images loaded -->
-        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
-        <!-- pull menu -->
-        <script type="text/javascript" src="js/classie.js"></script>
-        <script type="text/javascript" src="js/hamburger-menu.js"></script>
-        <!-- counter  -->
-        <script type="text/javascript" src="js/counter.js"></script>
-        <!-- fit video  -->
-        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
-        <!-- equalize -->
-        <script type="text/javascript" src="js/equalize.min.js"></script>
-        <!-- skill bars  -->
-        <script type="text/javascript" src="js/skill.bars.jquery.js"></script> 
-        <!-- justified gallery  -->
-        <script type="text/javascript" src="js/justified-gallery.min.js"></script>
-        <!--pie chart-->
-        <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
-        <!-- instagram -->
-        <script type="text/javascript" src="js/instafeed.min.js"></script>
-        <!-- retina -->
-        <script type="text/javascript" src="js/retina.min.js"></script>
-        <!-- revolution -->
-        <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
-        <!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        </div>
+        <div class="container-fluid padding-thirteen-lr md-no-padding-lr xs-padding-15px-lr">
+            <div class="row no-margin">
+                <div class="filter-content overflow-hidden">
+                    <ul class="portfolio-grid work-2col gutter-large hover-option6 lightbox-portfolio">
+                        <li class="grid-sizer"></li>
+                        <!-- start  portfolio item -->
+                        <li class="design web photography grid-item wow fadeInUp last-paragraph-no-margin">
+                            <figure>
+                                <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
+                                    <img src="img/02.gif" alt="" />
+                                    <div class="portfolio-icon">
+                                        <a class="project-05.html" title="IMAGE TITLE" href="project-02.html"><i
+                                                class="fa fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <figcaption class="bg-white">
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box vertical-align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <a href="project-02.html"><span
+                                                        class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase display-block">Deila
+                                                        共享租車平台</span></a>
+                                                <p class="text-medium-gray text-extra-small text-uppercase">Branding +
+                                                    Identity + Web</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <!-- end portfolio item -->
+                        <!-- start portfolio item -->
+                        <li class="advertising grid-item wow fadeInUp last-paragraph-no-margin" data-wow-delay="0.2s">
+                            <figure>
+                                <div class="portfolio-img bg-deep-pink position-relative text-center overflow-hidden">
+                                    <img src="img/01.jpg" alt="" />
+                                    <div class="portfolio-icon">
+                                        <a class="project-01.html" title="IMAGE TITLE" href="project-01.html"><i
+                                                class="fa fa-search text-extra-dark-gray" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <figcaption class="bg-white">
+                                    <div class="portfolio-hover-main text-center">
+                                        <div class="portfolio-hover-box vertical-align-middle">
+                                            <div class="portfolio-hover-content position-relative">
+                                                <a href="project-01.html"><span
+                                                        class="line-height-normal font-weight-600 text-small alt-font margin-5px-bottom text-extra-dark-gray text-uppercase display-block">呷滴
+                                                        JiaDee</span></a>
+                                                <p class="text-medium-gray text-extra-small text-uppercase">Branding +
+                                                    Identity + Package + Space</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <!-- end portfolio item -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end portfolio item -->
+
+    <!-- start footer -->
+    <footer class="footer-strip bg-light-gray padding-50px-tb xs-padding-30px-tb">
+        <div class="container">
+            <div class="row equalize xs-equalize-auto">
+                <!-- start logo -->
+                <div class="col-md-3 col-sm-3 col-xs-12 display-table sm-text-center xs-margin-20px-bottom">
+                    <div class="display-table-cell vertical-align-middle">
+                        <a href="index.html"><img class="footer-logo" src="img/logo_ch.png"
+                                data-at2x="img/logo_ch@2x.png" alt="Trig"></a>
+                    </div>
+                </div>
+                <!-- end logo -->
+                <!-- start copyright -->
+                <div
+                    class="col-md-6 col-sm-6 col-xs-12 text-center text-small alt-font display-table xs-margin-10px-bottom sm-text-center">
+                    <div class="display-table-cell vertical-align-middle">
+                        三角點品牌顧問有限公司</br>
+                        &COPY; 2021, Trig studio
+                    </div>
+                </div>
+                <!-- end copyright -->
+                <!-- start social media -->
+                <div class="col-md-3 col-sm-3 col-xs-12 display-table  text-right sm-text-center">
+                    <div class="display-table-cell vertical-align-middle">
+                        <div class="social-icon-style-8 display-inline-block vertical-align-middle">
+                            <ul class="small-icon no-margin-bottom">
+                                <li><a class="facebook" href="https://goo.gl/dvyU5j" target="_blank"><i
+                                            class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a class="instagram" href="https://www.instagram.com/studio.trig/?hl=zh-tw"
+                                        target="_blank"><i class="fa fa-instagram"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end social media -->
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- start scroll to top -->
+    <a class="scroll-top-arrow" href="javascript:void(0);"><i class="ti-arrow-up"></i></a>
+    <!-- end scroll to top  -->
+    <!-- javascript libraries -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/modernizr.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    <script type="text/javascript" src="js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="js/jquery.appear.js"></script>
+    <!-- menu navigation -->
+    <script type="text/javascript" src="js/bootsnav.js"></script>
+    <script type="text/javascript" src="js/jquery.nav.js"></script>
+    <!-- animation -->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- page scroll -->
+    <script type="text/javascript" src="js/page-scroll.js"></script>
+    <!-- swiper carousel -->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <!-- counter -->
+    <script type="text/javascript" src="js/jquery.count-to.js"></script>
+    <!-- parallax -->
+    <script type="text/javascript" src="js/jquery.stellar.js"></script>
+    <!-- magnific popup -->
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+    <!-- portfolio with shorting tab -->
+    <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+    <!-- images loaded -->
+    <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- pull menu -->
+    <script type="text/javascript" src="js/classie.js"></script>
+    <script type="text/javascript" src="js/hamburger-menu.js"></script>
+    <!-- counter  -->
+    <script type="text/javascript" src="js/counter.js"></script>
+    <!-- fit video  -->
+    <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+    <!-- equalize -->
+    <script type="text/javascript" src="js/equalize.min.js"></script>
+    <!-- skill bars  -->
+    <script type="text/javascript" src="js/skill.bars.jquery.js"></script>
+    <!-- justified gallery  -->
+    <script type="text/javascript" src="js/justified-gallery.min.js"></script>
+    <!--pie chart-->
+    <script type="text/javascript" src="js/jquery.easypiechart.min.js"></script>
+    <!-- instagram -->
+    <script type="text/javascript" src="js/instafeed.min.js"></script>
+    <!-- retina -->
+    <script type="text/javascript" src="js/retina.min.js"></script>
+    <!-- revolution -->
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <!-- revolution slider extensions (load below extensions JS files only on local file systems to make the slider work! The following part can be removed on server for on demand loading) -->
+    <!--<script type="text/javascript" src="revolution/js/extensions/revolution.extension.actions.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.carousel.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
@@ -723,7 +848,8 @@
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.parallax.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
         <script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>-->
-        <!-- setting -->
-        <script type="text/javascript" src="js/main.js"></script>
-    </body>
+    <!-- setting -->
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>

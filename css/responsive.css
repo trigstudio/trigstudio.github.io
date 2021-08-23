@@ -14799,3 +14799,10 @@
     width: 70px;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .portfolio-grid.work-2col li,
+  .blog-grid.work-2col li {
+    width: 33.333%;
+  }
+}
