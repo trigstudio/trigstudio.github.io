@@ -10582,8 +10582,9 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
   z-index: 100000;
 }
 
-.hamburger-menu.show-menu .btn-hamburger .mobile-toggle span {
-  background: #fff;
+.hamburger-menu.show-menu .btn-hamburger .mobile-toggle img {
+  content: url("../img/nav-open.svg");
+  filter: invert(100%) contrast(500%);
 }
 
 /* .hamburger-menu.show-menu .btn-hamburger .close-menu,
