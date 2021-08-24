@@ -9400,7 +9400,7 @@ header.sticky nav.header-light .logo .logo-light {
 }
 
 .nav-top-scroll {
-  position: absolute;
+  position: fixed;
   top: 0;
   z-index: 5;
 }
@@ -10582,9 +10582,11 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
   z-index: 100000;
 }
 
-.hamburger-menu.show-menu .btn-hamburger .mobile-toggle img {
+.changeImg {
   content: url("../img/nav-open.svg");
   filter: invert(100%) contrast(500%);
+  transform: rotate(360deg);
+  transition: all 0.2s;
 }
 
 /* .hamburger-menu.show-menu .btn-hamburger .close-menu,
