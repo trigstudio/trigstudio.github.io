@@ -62,7 +62,7 @@
         !function (f, b, e, v, n, t, s) {
             if (f.fbq) return; n = f.fbq = function () {
                 n.callMethod ?
-                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
             };
             if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
             n.queue = []; t = b.createElement(e); t.async = !0;
@@ -103,8 +103,7 @@
                     <div class="col-md-4 col-sm-4 col-xs-6 text-right">
                         <div class="hamburger-menu">
                             <div class="btn btn-hamburger border-none">
-                                <button class="navbar-toggle mobile-toggle" type="button" id="open-button"
-                                    data-toggle="collapse" data-target=".navbar-collapse">
+                                <button class="navbar-toggle mobile-toggle" type="button" id="toggle-nav">
                                     <span></span>
                                     <span></span>
                                     <span></span>
@@ -114,13 +113,6 @@
                                 <div class="hamburger-logo text-left">
                                     <a href="index.html" class="logo"><img src="img/logo-white.svg"
                                             data-at2x="img/logo-white@2x.svg" alt="Trig" width="50" /></a>
-                                </div>
-                                <div class="btn btn-hamburger border-none">
-                                    <button class="
-                            close-menu close-button-menu
-                            avbar-toggle
-                            mobile-toggle
-                          " id="close-button"></button>
                                 </div>
                                 <div class="animation-box">
                                     <div class="menu-middle">

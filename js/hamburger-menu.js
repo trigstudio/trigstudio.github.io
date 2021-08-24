@@ -1,64 +1,68 @@
-/*==============================================================
-    pull menu
- ==============================================================*/
+// /*==============================================================
+//     pull menu
+//  ==============================================================*/
 
-function bindEvent(el, eventName, eventHandler) {
-    if (el.addEventListener) {
-        el.addEventListener(eventName, eventHandler, false);
-    } else if (el.attachEvent) {
-        el.attachEvent('on' + eventName, eventHandler);
-    }
-}
+// function bindEvent(el, eventName, eventHandler) {
+//     if (el.addEventListener) {
+//         el.addEventListener(eventName, eventHandler, false);
+//     } else if (el.attachEvent) {
+//         el.attachEvent('on' + eventName, eventHandler);
+//     }
+// }
 
-(function () {
+// (function () {
 
-    var bodyEl = document.body,
-            //content = document.querySelector( '.content-wrap' ),
-            openbtn = document.getElementById('open-button'),
-            closebtn = document.getElementById('close-button'),
-            isOpen = false;
+//     var bodyEl = document.body,
+//             //content = document.querySelector( '.content-wrap' ),
+//             openbtn = document.getElementById('open-button'),
+//             closebtn = document.getElementById('close-button'),
+//             isOpen = false;
 
-    function init() {
-        initEvents();
-    }
+//     function init() {
+//         initEvents();
+//     }
 
-    function initEvents() {
-        if (openbtn) {
-            bindEvent(openbtn, 'click', toggleMenu);
+//     function initEvents() {
+//         if (openbtn) {
+//             bindEvent(openbtn, 'click', toggleMenu);
 
-        }
-        //openbtn.addEventListener( 'click', toggleMenu );
-        if (closebtn) {
+//         }
+//         //openbtn.addEventListener( 'click', toggleMenu );
+//         if (closebtn) {
 
-            bindEvent(closebtn, 'click', toggleMenu);
-            //closebtn.addEventListener( 'click', toggleMenu );
-        }
+//             bindEvent(closebtn, 'click', toggleMenu);
+//             //closebtn.addEventListener( 'click', toggleMenu );
+//         }
 
-        // close the menu element if the target itÂ´s not the menu element or one of its descendants..
+//         // close the menu element if the target itÂ´s not the menu element or one of its descendants..
 
-    }
+//     }
 
-    function toggleMenu() {
+//     function toggleMenu() {
 
-        if (isOpen) {
-            classie.remove(bodyEl, 'show-menu');
-             if ( $( ".full-width-pull-menu" ).length ) {
-                 classie.remove(bodyEl, 'overflow-hidden');
-                 classie.remove(bodyEl, 'position-fixed');
-            }
-        }
-        else {
-            classie.add(bodyEl, 'show-menu');
-            
-            if ( $( ".full-width-pull-menu" ).length ) {
-                classie.add(bodyEl, 'overflow-hidden');
-                classie.add(bodyEl, 'position-fixed');
-            }
-           
-        }
-        isOpen = !isOpen;
-    }
+//         if (isOpen) {
+//             classie.remove(bodyEl, 'show-menu');
+//              if ( $( ".full-width-pull-menu" ).length ) {
+//                  classie.remove(bodyEl, 'overflow-hidden');
+//                  classie.remove(bodyEl, 'position-fixed');
+//             }
+//         }
+//         else {
+//             classie.add(bodyEl, 'show-menu');
 
-    init();
+//             if ( $( ".full-width-pull-menu" ).length ) {
+//                 classie.add(bodyEl, 'overflow-hidden');
+//                 classie.add(bodyEl, 'position-fixed');
+//             }
 
-})();
+//         }
+//         isOpen = !isOpen;
+//     }
+
+//     init();
+
+// })();
+
+// $("#toggle-nav").on("click", function () {
+//   $(".hamburger-menu-wrepper").slideDown();
+// });
