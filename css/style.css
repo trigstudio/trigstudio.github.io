@@ -9416,6 +9416,7 @@ header a.logo {
 
 header a .fixByShuan {
   width: 100px;
+  filter: drop-shadow(0px 0px 2px #fff);
 }
 
 header a.logo img {
@@ -9817,6 +9818,7 @@ header nav .row > div:first-child {
   -webkit-box-flex: 1;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  z-index: 10005;
 }
 
 header nav.navbar {
@@ -10589,18 +10591,8 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
 .hamburger-menu.show-menu .btn-hamburger .mobile-toggle .changeImg {
   content: url("../img/nav-open.svg");
   filter: invert(100%) contrast(500%);
-  transform: rotate(360deg);
-  transition: all 0.2s;
+  animation: jumps 0.8s;
 }
-
-/* .hamburger-menu.show-menu .btn-hamburger .close-menu,
-.hamburger-menu .btn-hamburger .mobile-toggle {
-  transform: scale(1);
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -o-transform: scale(1);
-  -ms-transform: scale(1);
-} */
 
 .hamburger-menu .hamburger-menu-wrepper .btn-hamburger {
   border-color: #fff;
@@ -17459,4 +17451,33 @@ a.custom-hover:hover {
   transform: translate(-50%);
   font-size: 24px;
   color: #fff;
+}
+
+header .white-img img {
+  filter: invert(1);
+  animation: jumps 0.8s;
+}
+
+@keyframes jumps {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(380deg);
+  }
+  60% {
+    transform: rotate(360deg);
+  }
+  70% {
+    transform: rotate(375deg);
+  }
+  80% {
+    transform: rotate(360deg);
+  }
+  95% {
+    transform: rotate(365deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

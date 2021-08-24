@@ -2585,4 +2585,5 @@ END Page Load
 
 $("#toggle-nav").on("click", function () {
   $("#toggle-nav>img").toggleClass("changeImg");
+  $("header nav .row > div:first-child").toggleClass("white-img");
 });
