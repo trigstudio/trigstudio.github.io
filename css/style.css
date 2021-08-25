@@ -9416,7 +9416,6 @@ header a.logo {
 
 header a .fixByShuan {
   width: 100px;
-  filter: drop-shadow(0px 0px 2px #fff);
 }
 
 header a.logo img {
@@ -10584,14 +10583,11 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
   z-index: 100000;
 }
 
-.hamburger-menu .btn-hamburger .mobile-toggle img {
-  filter: drop-shadow(0px 0px 2px #fff);
-}
-
 .hamburger-menu.show-menu .btn-hamburger .mobile-toggle .changeImg {
   content: url("../img/nav-open.svg");
   filter: invert(100%) contrast(500%);
   animation: jumps 0.8s;
+  transition: all 0.5s;
 }
 
 .hamburger-menu .hamburger-menu-wrepper .btn-hamburger {
@@ -17455,7 +17451,7 @@ a.custom-hover:hover {
 
 header .white-img img {
   filter: invert(1);
-  animation: jumps 0.8s;
+  transition: all 0.5s;
 }
 
 @keyframes jumps {
