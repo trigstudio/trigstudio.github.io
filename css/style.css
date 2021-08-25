@@ -9419,6 +9419,11 @@ header a .fixByShuan {
   filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg);
 }
 
+header a:hover .fixByShuan {
+  filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg)
+    drop-shadow(2px 2px 0px #ffffff);
+}
+
 header a.logo img {
   max-height: 100px;
 }
@@ -17451,7 +17456,6 @@ a.custom-hover:hover {
 
 header .white-img img {
   filter: invert(1);
-  transition: all 0.5s;
 }
 
 @keyframes jumps {
