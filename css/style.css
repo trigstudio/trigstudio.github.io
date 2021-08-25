@@ -9416,6 +9416,7 @@ header a.logo {
 
 header a .fixByShuan {
   width: 100px;
+  filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg);
 }
 
 header a.logo img {
@@ -10587,7 +10588,6 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
   content: url("../img/nav-open.svg");
   filter: invert(100%) contrast(500%);
   animation: jumps 0.8s;
-  transition: all 0.5s;
 }
 
 .hamburger-menu .hamburger-menu-wrepper .btn-hamburger {
