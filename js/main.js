@@ -2582,12 +2582,12 @@ $(window).load(function () {
 /* ===================================
 END Page Load
 ====================================== */
-
-$("#toggle-nav").on("click", function () {
-  $("#toggle-nav>img").toggleClass("changeImg");
-  $("header nav .row > div:first-child").toggleClass("white-img");
+$(document).ready(function () {
+  $("#toggle-nav").on("click", function () {
+    $("#toggle-nav > img").toggleClass("changeImg");
+    $("header nav .row > div:first-child").toggleClass("white-img");
+  });
 });
-
 var alt_val, elem, i, timeout;
 
 $(".img-loop")

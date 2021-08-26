@@ -4549,7 +4549,7 @@
   }
 
   /* header style */
-  header * {
+  /* header * {
     transition-timing-function: none;
     -moz-transition-timing-function: none;
     -webkit-transition-timing-function: none;
@@ -4560,7 +4560,7 @@
     -webkit-transition-duration: 0s;
     -ms-transition-duration: 0s;
     -o-transition-duration: 0s;
-  }
+  } */
   .dropdown-menu {
     box-shadow: none;
     border: none;
