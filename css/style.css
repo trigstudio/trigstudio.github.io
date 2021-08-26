@@ -9414,16 +9414,6 @@ header a.logo {
   vertical-align: middle;
 }
 
-header a .fixByShuan {
-  width: 100px;
-  filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg);
-}
-
-header a:hover .fixByShuan {
-  filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg)
-    drop-shadow(2px 2px 0px #ffffff);
-}
-
 header a.logo img {
   max-height: 100px;
 }
@@ -10587,12 +10577,6 @@ nav.navbar.bootsnav .btn-hamburger .navbar-toggle {
 .hamburger-menu.show-menu .btn-hamburger .mobile-toggle,
 .hamburger-menu .btn-hamburger .close-menu {
   z-index: 100000;
-}
-
-.hamburger-menu.show-menu .btn-hamburger .mobile-toggle .changeImg {
-  content: url("../img/nav-open.svg");
-  filter: invert(100%) contrast(500%);
-  animation: jumps 0.8s;
 }
 
 .hamburger-menu .hamburger-menu-wrepper .btn-hamburger {
@@ -17394,6 +17378,7 @@ a.custom-hover:hover {
 
 .custom_hover_bigger {
   -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
   transition: ease 0.5s;
   width: 100%;
   height: 100%;
@@ -17410,7 +17395,8 @@ a.custom-hover:hover {
 
 .custom_hover_bigger:hover {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -ms-transform: scale(1.2);
+      transform: scale(1.2);
 }
 
 .text-main {
@@ -17427,8 +17413,12 @@ a.custom-hover:hover {
   list-style: none;
   padding: 0;
   margin: 0;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .job-item {
@@ -17449,35 +17439,97 @@ a.custom-hover:hover {
   left: 50%;
   width: 100%;
   text-align: center;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
   font-size: 24px;
   color: #fff;
 }
 
+header a .fixByShuan {
+  width: 100px;
+  -webkit-filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg);
+          filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg);
+}
+
+header a:hover .fixByShuan {
+  -webkit-filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg)
+    drop-shadow(2px 2px 0px #ffffff);
+          filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg)
+    drop-shadow(2px 2px 0px #ffffff);
+}
+
+.hamburger-menu.show-menu .btn-hamburger .mobile-toggle .changeImg {
+  content: url("../img/nav-open.svg");
+  -webkit-filter: invert(100%) contrast(500%);
+          filter: invert(100%) contrast(500%);
+  -webkit-animation: jumps 0.8s;
+          animation: jumps 0.8s;
+}
+
 header .white-img img {
-  filter: invert(1);
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+@-webkit-keyframes jumps {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(380deg);
+            transform: rotate(380deg);
+  }
+  60% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  70% {
+    -webkit-transform: rotate(375deg);
+            transform: rotate(375deg);
+  }
+  80% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  95% {
+    -webkit-transform: rotate(365deg);
+            transform: rotate(365deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 @keyframes jumps {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   50% {
-    transform: rotate(380deg);
+    -webkit-transform: rotate(380deg);
+            transform: rotate(380deg);
   }
   60% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   70% {
-    transform: rotate(375deg);
+    -webkit-transform: rotate(375deg);
+            transform: rotate(375deg);
   }
   80% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   95% {
-    transform: rotate(365deg);
+    -webkit-transform: rotate(365deg);
+            transform: rotate(365deg);
   }
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }

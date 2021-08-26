@@ -2587,3 +2587,28 @@ $("#toggle-nav").on("click", function () {
   $("#toggle-nav>img").toggleClass("changeImg");
   $("header nav .row > div:first-child").toggleClass("white-img");
 });
+
+var alt_val, elem, i, timeout;
+
+$(".img-loop")
+  .mouseenter(function () {
+    $(this).data("old-val", this.src);
+    elem = this;
+    alt_val = $(this).data("alt-val").split(";");
+    i = 0;
+    timeout = setTimeout(loop, 500);
+  })
+  .mouseout(function () {
+    clearTimeout(timeout);
+    this.src = $(this).data("old-val");
+  });
+
+function loop() {
+  if (i === alt_val.length) {
+    elem.src = $(elem).data("old-val");
+    i = 0;
+  } else {
+    elem.src = alt_val[i++];
+  }
+  timeout = setTimeout(loop, 500);
+}
