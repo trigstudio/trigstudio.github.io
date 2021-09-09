@@ -17396,7 +17396,7 @@ a.custom-hover:hover {
 .custom_hover_bigger:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
-      transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .text-main {
@@ -17414,11 +17414,11 @@ a.custom-hover:hover {
   padding: 0;
   margin: 0;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .job-item {
@@ -17440,8 +17440,8 @@ a.custom-hover:hover {
   width: 100%;
   text-align: center;
   -webkit-transform: translate(-50%);
-      -ms-transform: translate(-50%);
-          transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  transform: translate(-50%);
   font-size: 24px;
   color: #fff;
 }
@@ -17449,87 +17449,95 @@ a.custom-hover:hover {
 header a .fixByShuan {
   width: 100px;
   -webkit-filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg);
-          filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg);
+  filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg);
 }
 
 header a:hover .fixByShuan {
   -webkit-filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg)
     drop-shadow(2px 2px 0px #ffffff);
-          filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg)
+  filter: invert(40%) sepia(0%) saturate(500%) hue-rotate(0deg)
     drop-shadow(2px 2px 0px #ffffff);
 }
 
 .hamburger-menu.show-menu .btn-hamburger .mobile-toggle .changeImg {
   content: url("../img/nav-open.svg");
   -webkit-filter: invert(100%) contrast(500%);
-          filter: invert(100%) contrast(500%);
+  filter: invert(100%) contrast(500%);
   -webkit-animation: jumps 0.8s;
-          animation: jumps 0.8s;
+  animation: jumps 0.8s;
 }
 
 header .white-img img {
   -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 
 @-webkit-keyframes jumps {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
     -webkit-transform: rotate(380deg);
-            transform: rotate(380deg);
+    transform: rotate(380deg);
   }
   60% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   70% {
     -webkit-transform: rotate(375deg);
-            transform: rotate(375deg);
+    transform: rotate(375deg);
   }
   80% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   95% {
     -webkit-transform: rotate(365deg);
-            transform: rotate(365deg);
+    transform: rotate(365deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes jumps {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   50% {
     -webkit-transform: rotate(380deg);
-            transform: rotate(380deg);
+    transform: rotate(380deg);
   }
   60% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   70% {
     -webkit-transform: rotate(375deg);
-            transform: rotate(375deg);
+    transform: rotate(375deg);
   }
   80% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   95% {
     -webkit-transform: rotate(365deg);
-            transform: rotate(365deg);
+    transform: rotate(365deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
+}
+
+.filter-logo a img {
+  filter: grayscale(1);
+}
+
+.filter-logo a:hover img {
+  filter: unset;
 }
