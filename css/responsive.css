@@ -14799,10 +14799,15 @@
     width: 70px;
   }
 }
-
+.display-lg-block{
+  display: none;
+}
 @media screen and (min-width: 1024px) {
   .portfolio-grid.work-2col li,
   .blog-grid.work-2col li {
     width: 33.333%;
+  }
+  .display-lg-block {
+    display: block;
   }
 }

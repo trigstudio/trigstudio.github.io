@@ -17541,3 +17541,26 @@ header .white-img img {
 .filter-logo a:hover img {
   filter: unset;
 }
+.img-loop {
+  height: 95px;
+  width: 168px;
+  object-fit: contain;
+}
+@media (max-width: 1199px) {
+  .img-loop {
+    height: 90px;
+    width: 160px;
+  }
+}
+@media (max-width: 991px) {
+  .img-loop {
+    height: 70px;
+    width: 124px;
+  }
+}
+@media (max-width: 767px) {
+  .img-loop {
+    height: 38px;
+    width: 68px;
+  }
+}
