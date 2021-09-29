@@ -17572,3 +17572,8 @@ header .white-img img {
     padding-top: 70px;
   }
 }
+
+h6.alt-font,
+h5.alt-font {
+  word-break: keep-all;
+}
