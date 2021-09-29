@@ -17558,9 +17558,17 @@ header .white-img img {
     width: 124px;
   }
 }
+@media (max-width: 1365px) {
+  .padding-custom {
+    padding-top: 100px;
+  }
+}
 @media (max-width: 767px) {
   .img-loop {
     height: 38px;
     width: 68px;
+  }
+  .padding-custom {
+    padding-top: 70px;
   }
 }
