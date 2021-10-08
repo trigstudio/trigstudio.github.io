@@ -9806,6 +9806,7 @@ header nav .row {
   display: -ms-flexbox;
   display: flex;
   height: auto;
+  justify-content: space-between;
   padding: 0;
 }
 
