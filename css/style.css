@@ -12463,9 +12463,9 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {
 
 /* square pagination */
 .swiper-pagination-square .swiper-pagination-bullet {
-  height: 3px;
-  width: 30px;
-  border-radius: 0;
+  height: 10px;
+  width: 10px;
+  border: 1px solid #fff;
 }
 
 /* square pagination */
