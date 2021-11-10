@@ -2585,7 +2585,11 @@ END Page Load
 $(document).ready(function () {
   $("#toggle-nav").on("click", function () {
     $("#toggle-nav > img").toggleClass("changeImg");
-    $("header nav .row > div:first-child").toggleClass("white-img");
+    $(".header-logo").toggleClass("white-img");
+  });
+  $(".menu-toggler").on("click", function () {
+    $(this).toggleClass("open");
+    $("nav").toggleClass("open");
   });
 });
 var alt_val, elem, i, timeout;
