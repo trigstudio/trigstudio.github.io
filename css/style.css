@@ -17534,6 +17534,7 @@ nav.open {
   .header-description {
     width: 100%;
     padding: 0 20px;
+    margin-top: 50px;
   }
 
   .header-description > * {
@@ -17545,11 +17546,11 @@ nav.open {
     width: 100%;
     padding: 0;
     flex-direction: row;
-    margin: 40px auto 0;
+    margin: 80px auto 0;
   }
 
   .header-menu li {
-    margin-bottom: 15px;
+    margin: 2rem 0 15px;
   }
 
   .header-menu li a {
