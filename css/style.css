@@ -17461,6 +17461,8 @@ nav.open {
   cursor: pointer;
   z-index: 999;
   transition: all 650ms ease-out;
+  flex-direction: row-reverse;
+  align-items: center;
 }
 
 .header-description {
@@ -17570,4 +17572,16 @@ nav.open {
     top: 20px;
     right: 20px;
   }
+}
+
+#info {
+  font-size: 15px;
+  margin-right: 15px;
+  color: #666;
+  line-height: 1.25;
+  text-align: right;
+}
+
+.open #info {
+  color: #fff;
 }

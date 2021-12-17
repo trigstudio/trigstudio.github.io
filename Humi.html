@@ -86,8 +86,9 @@
         <a class="header-logo" href="index.html">
             <img src="img/logo_ch@2x.svg" class="fixByShuan" alt="Trig" />
         </a>
-        <div class="menu-toggler" id="toggle-nav">
+        <div class="menu-toggler display-flex" id="toggle-nav">
             <img src="img/nav-default.svg" width="30px" alt="">
+            <div id="info">25° 2' 56.3"N<br>121° 31' 32.5"E</div>
         </div>
         <nav>
             <div class="header-container">
@@ -251,7 +252,9 @@
                 <!-- end product gallery item -->
                 <div
                     class="col-lg-8 col-md-12 center-col text-center margin-35px-bottom xs-margin-15px-bottom wow fadeInUp">
-                    <video autoplay muted loop src="img/Humi/4-1.mp4"></video>
+                    <video playsinline autoplay muted loop="loop">
+                        <source src="img/Humi/4-1.mp4" type="video/mp4">
+                    </video>
                 </div>
                 <!-- start project gallery slider section -->
                 <div

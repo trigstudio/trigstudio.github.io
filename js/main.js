@@ -2616,3 +2616,13 @@ function loop() {
   }
   timeout = setTimeout(loop, 700);
 }
+
+// Getting 'Info' div in js hands
+var info = document.getElementById("info");
+
+// Creating function that will tell the position of cursor
+// PageX and PageY will getting position values and show them in P
+function tellPos(p) {
+  info.innerHTML = `25° 2' 56.${p.pageY}"N<br>121° 31' 32.${p.pageX}"E`;
+}
+addEventListener("mousemove", tellPos, false);
