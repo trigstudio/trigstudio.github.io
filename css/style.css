@@ -17274,7 +17274,7 @@ a.custom-hover:hover {
 
 .job-item-link-title {
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 50%;
   width: 100%;
   text-align: center;
@@ -17282,6 +17282,11 @@ a.custom-hover:hover {
   -ms-transform: translate(-50%);
   transform: translate(-50%);
   font-size: 24px;
+  color: #fff;
+  line-height: 1;
+}
+
+.job-item-link-title small {
   color: #fff;
 }
 
@@ -17584,4 +17589,10 @@ nav.open {
 
 .open #info {
   color: #fff;
+}
+
+@media all and (max-width: 1200px) {
+  #info {
+    display: none;
+  }
 }
