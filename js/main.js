@@ -1085,6 +1085,7 @@ $(document).ready(function () {
     $grid_selectors.parent().removeClass("active");
     $(this).parent().addClass("active");
     var selector = $(this).attr("data-filter");
+    $(selector).show();
     $portfolio_filter
       .find(".grid-item")
       .removeClass("animated")
