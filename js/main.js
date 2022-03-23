@@ -2601,7 +2601,7 @@ $(".img-loop")
     elem = this;
     alt_val = $(this).data("alt-val").split(";");
     i = 0;
-    timeout = setTimeout(loop, 700);
+    timeout = setTimeout(loop, 100);
   })
   .mouseout(function () {
     clearTimeout(timeout);
@@ -2615,7 +2615,7 @@ function loop() {
   } else {
     elem.src = alt_val[i++];
   }
-  timeout = setTimeout(loop, 700);
+  timeout = setTimeout(loop, 300);
 }
 
 // Getting 'Info' div in js hands
