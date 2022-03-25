@@ -1,7 +1,8 @@
 .display-1 {
-  font-size: 140px;
-  line-height: 1;
   margin-top: 0;
+}
+.display-1 img {
+  height: 140px;
 }
 
 .display-flex-column {
@@ -11,7 +12,7 @@
 }
 
 .img-loop {
-  height: 160px;
+  height: 140px;
   width: auto;
   margin-top: 30px;
 }
@@ -26,20 +27,14 @@
   display: none;
 }
 @media all and (max-width: 1280px) {
-  .display-1 {
-    font-size: 100px;
-  }
-
+  .display-1 img,
   .img-loop {
     height: 120px;
   }
 }
 
 @media all and (max-width: 992px) {
-  .display-1 {
-    font-size: 80px;
-  }
-
+  .display-1 img,
   .img-loop {
     height: 90px;
   }
@@ -52,12 +47,15 @@
 
 @media all and (max-width: 767px) {
   .display-1 {
-    font-size: 70px;
     margin-top: -50px;
   }
 
+  .display-1 img,
   .img-loop {
     height: 80px;
+  }
+
+  .img-loop {
     margin-bottom: 30px;
   }
 

@@ -17591,6 +17591,10 @@ nav.open {
     padding-top: 30px;
     margin-top: 30px;
   }
+  .custom_contact_border {
+    border: none;
+    border-bottom: 1px solid;
+  }
 }
 
 #info {
