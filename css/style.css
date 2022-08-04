@@ -12317,14 +12317,14 @@ header.sticky nav.navbar.brand-center ul.nav > li > a {
   border: 1px solid #fff;
 }
 
-/* square pagination */
+/* square pagination
 .white-move .swiper-slide {
   cursor: url("../images/icon-move-light.png"), move;
 }
 
 .black-move .swiper-slide {
   cursor: url("../images/icon-move-black.png"), move;
-}
+} */
 
 /* number pagination */
 .swiper-number {
