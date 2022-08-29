@@ -17424,11 +17424,6 @@ header .white-img img {
   }
 }
 
-h6.alt-font,
-h5.alt-font {
-  word-break: keep-all;
-}
-
 header nav {
   width: 100%;
   height: 100vh;
