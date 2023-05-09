@@ -358,13 +358,13 @@ function fullScreenHeight() {
   $(".sidebar-nav-style-1 .nav").css("height", sidebarNavHeight);
   var style2NavHeight = parseInt(
     $(".sidebar-part2").height() -
-      parseInt($(".sidebar-part2 .sidebar-middle").css("padding-top")) -
-      parseInt($(".sidebar-part2 .sidebar-middle").css("padding-bottom")) -
-      parseInt(
-        $(".sidebar-part2 .sidebar-middle .sidebar-middle-menu .nav").css(
-          "margin-bottom"
-        )
+    parseInt($(".sidebar-part2 .sidebar-middle").css("padding-top")) -
+    parseInt($(".sidebar-part2 .sidebar-middle").css("padding-bottom")) -
+    parseInt(
+      $(".sidebar-part2 .sidebar-middle .sidebar-middle-menu .nav").css(
+        "margin-bottom"
       )
+    )
   );
   $(".sidebar-part2 .sidebar-middle .sidebar-middle-menu .nav").css(
     "height",
@@ -1746,10 +1746,10 @@ $(document).ready(function () {
       $(this).html(
         event.strftime(
           "" +
-            '<div class="counter-container"><div class="counter-box first"><div class="number">%-D</div><span>Day%!d</span></div>' +
-            '<div class="counter-box"><div class="number">%H</div><span>Hours</span></div>' +
-            '<div class="counter-box"><div class="number">%M</div><span>Minutes</span></div>' +
-            '<div class="counter-box last"><div class="number">%S</div><span>Seconds</span></div></div>'
+          '<div class="counter-container"><div class="counter-box first"><div class="number">%-D</div><span>Day%!d</span></div>' +
+          '<div class="counter-box"><div class="number">%H</div><span>Hours</span></div>' +
+          '<div class="counter-box"><div class="number">%M</div><span>Minutes</span></div>' +
+          '<div class="counter-box last"><div class="number">%S</div><span>Seconds</span></div></div>'
         )
       );
     });
@@ -2627,3 +2627,7 @@ function tellPos(p) {
   info.innerHTML = `25° 2' 56.${p.pageY}"N<br>121° 31' 32.${p.pageX}"E`;
 }
 addEventListener("mousemove", tellPos, false);
+
+jQuery.htmlPrefilter = function (html) {
+  return html;
+};
